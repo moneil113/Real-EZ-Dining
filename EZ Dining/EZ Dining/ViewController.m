@@ -2,8 +2,8 @@
 //  ViewController.m
 //  EZ Dining
 //
-//  Created by Matthew O'Neil on 11/12/13.
-//  Copyright (c) 2013 Matthew O'Neil. All rights reserved.
+//  Created by Matthew O'Neil on 10/24/13.
+//  Copyright (c) 2013 DJMMEK POW. All rights reserved.
 //
 
 #import "ViewController.h"

@@ -14,7 +14,6 @@
 		3474F6881832A7DD00497D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6871832A7DD00497D24 /* main.m */; };
 		3474F68C1832A7DD00497D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F68B1832A7DD00497D24 /* AppDelegate.m */; };
 		3474F68F1832A7DD00497D24 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3474F68D1832A7DD00497D24 /* Main_iPhone.storyboard */; };
-		3474F6921832A7DD00497D24 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3474F6901832A7DD00497D24 /* Main_iPad.storyboard */; };
 		3474F6951832A7DD00497D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6941832A7DD00497D24 /* ViewController.m */; };
 		3474F6971832A7DD00497D24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3474F6961832A7DD00497D24 /* Images.xcassets */; };
 		3474F69E1832A7DD00497D24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F69D1832A7DD00497D24 /* XCTest.framework */; };
@@ -22,6 +21,27 @@
 		3474F6A01832A7DD00497D24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F67F1832A7DD00497D24 /* UIKit.framework */; };
 		3474F6A81832A7DD00497D24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3474F6A61832A7DD00497D24 /* InfoPlist.strings */; };
 		3474F6AA1832A7DD00497D24 /* EZ_DiningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6A91832A7DD00497D24 /* EZ_DiningTests.m */; };
+		3474F6B41832A85900497D24 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6B31832A85900497D24 /* AudioToolbox.framework */; };
+		3474F6B61832A85E00497D24 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6B51832A85E00497D24 /* CFNetwork.framework */; };
+		3474F6B81832A86A00497D24 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6B71832A86A00497D24 /* CoreLocation.framework */; };
+		3474F6BA1832A87400497D24 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6B91832A87400497D24 /* libz.1.1.3.dylib */; };
+		3474F6BC1832A87B00497D24 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6BB1832A87B00497D24 /* MobileCoreServices.framework */; };
+		3474F6BE1832A88100497D24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6BD1832A88100497D24 /* QuartzCore.framework */; };
+		3474F6C01832A88800497D24 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6BF1832A88800497D24 /* Security.framework */; };
+		3474F6C21832A89000497D24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6C11832A89000497D24 /* StoreKit.framework */; };
+		3474F6C41832A89800497D24 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6C31832A89800497D24 /* SystemConfiguration.framework */; };
+		3474F6C61832A8C100497D24 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F6C51832A8C100497D24 /* Parse.framework */; };
+		3474F6CD1832A90B00497D24 /* CartHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6C81832A90B00497D24 /* CartHandler.m */; };
+		3474F6CE1832A90B00497D24 /* einsteinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6CA1832A90B00497D24 /* einsteinCell.m */; };
+		3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6CC1832A90B00497D24 /* einsteinTableViewController.m */; };
+		3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3474F6D01832A91C00497D24 /* EZ Dining-Info.plist */; };
+		3474F6D51832A91C00497D24 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D31832A91C00497D24 /* FoodItem.m */; };
+		3474F6E11832A93200497D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D61832A93200497D24 /* main.m */; };
+		3474F6E21832A93200497D24 /* sandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D81832A93200497D24 /* sandCell.m */; };
+		3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DA1832A93200497D24 /* sandfacViewController.m */; };
+		3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DC1832A93200497D24 /* tacosTableViewController.m */; };
+		3474F6E51832A93200497D24 /* vgsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DE1832A93200497D24 /* vgsCell.m */; };
+		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +66,6 @@
 		3474F68A1832A7DD00497D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3474F68B1832A7DD00497D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3474F68E1832A7DD00497D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		3474F6911832A7DD00497D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		3474F6931832A7DD00497D24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3474F6941832A7DD00497D24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3474F6961832A7DD00497D24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +74,37 @@
 		3474F6A51832A7DD00497D24 /* EZ DiningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EZ DiningTests-Info.plist"; sourceTree = "<group>"; };
 		3474F6A71832A7DD00497D24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3474F6A91832A7DD00497D24 /* EZ_DiningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZ_DiningTests.m; sourceTree = "<group>"; };
+		3474F6B31832A85900497D24 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3474F6B51832A85E00497D24 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3474F6B71832A86A00497D24 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3474F6B91832A87400497D24 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		3474F6BB1832A87B00497D24 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3474F6BD1832A88100497D24 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3474F6BF1832A88800497D24 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3474F6C11832A89000497D24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3474F6C31832A89800497D24 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3474F6C51832A8C100497D24 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		3474F6C71832A90B00497D24 /* CartHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartHandler.h; sourceTree = "<group>"; };
+		3474F6C81832A90B00497D24 /* CartHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartHandler.m; sourceTree = "<group>"; };
+		3474F6C91832A90B00497D24 /* einsteinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = einsteinCell.h; sourceTree = "<group>"; };
+		3474F6CA1832A90B00497D24 /* einsteinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = einsteinCell.m; sourceTree = "<group>"; };
+		3474F6CB1832A90B00497D24 /* einsteinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = einsteinTableViewController.h; sourceTree = "<group>"; };
+		3474F6CC1832A90B00497D24 /* einsteinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = einsteinTableViewController.m; sourceTree = "<group>"; };
+		3474F6D01832A91C00497D24 /* EZ Dining-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EZ Dining-Info.plist"; sourceTree = "<group>"; };
+		3474F6D11832A91C00497D24 /* EZ Dining-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZ Dining-Prefix.pch"; sourceTree = "<group>"; };
+		3474F6D21832A91C00497D24 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
+		3474F6D31832A91C00497D24 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
+		3474F6D61832A93200497D24 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3474F6D71832A93200497D24 /* sandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandCell.h; sourceTree = "<group>"; };
+		3474F6D81832A93200497D24 /* sandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandCell.m; sourceTree = "<group>"; };
+		3474F6D91832A93200497D24 /* sandfacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandfacViewController.h; sourceTree = "<group>"; };
+		3474F6DA1832A93200497D24 /* sandfacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandfacViewController.m; sourceTree = "<group>"; };
+		3474F6DB1832A93200497D24 /* tacosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tacosTableViewController.h; sourceTree = "<group>"; };
+		3474F6DC1832A93200497D24 /* tacosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tacosTableViewController.m; sourceTree = "<group>"; };
+		3474F6DD1832A93200497D24 /* vgsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgsCell.h; sourceTree = "<group>"; };
+		3474F6DE1832A93200497D24 /* vgsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsCell.m; sourceTree = "<group>"; };
+		3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgsTableViewViewController.h; sourceTree = "<group>"; };
+		3474F6E01832A93200497D24 /* vgsTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTableViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +112,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3474F6C41832A89800497D24 /* SystemConfiguration.framework in Frameworks */,
+				3474F6C21832A89000497D24 /* StoreKit.framework in Frameworks */,
+				3474F6C01832A88800497D24 /* Security.framework in Frameworks */,
+				3474F6BE1832A88100497D24 /* QuartzCore.framework in Frameworks */,
+				3474F6BC1832A87B00497D24 /* MobileCoreServices.framework in Frameworks */,
+				3474F6BA1832A87400497D24 /* libz.1.1.3.dylib in Frameworks */,
+				3474F6C61832A8C100497D24 /* Parse.framework in Frameworks */,
+				3474F6B81832A86A00497D24 /* CoreLocation.framework in Frameworks */,
 				3474F67E1832A7DD00497D24 /* CoreGraphics.framework in Frameworks */,
+				3474F6B61832A85E00497D24 /* CFNetwork.framework in Frameworks */,
+				3474F6B41832A85900497D24 /* AudioToolbox.framework in Frameworks */,
 				3474F6801832A7DD00497D24 /* UIKit.framework in Frameworks */,
 				3474F67C1832A7DD00497D24 /* Foundation.framework in Frameworks */,
 			);
@@ -103,6 +163,16 @@
 		3474F67A1832A7DD00497D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3474F6C51832A8C100497D24 /* Parse.framework */,
+				3474F6C31832A89800497D24 /* SystemConfiguration.framework */,
+				3474F6C11832A89000497D24 /* StoreKit.framework */,
+				3474F6BF1832A88800497D24 /* Security.framework */,
+				3474F6BD1832A88100497D24 /* QuartzCore.framework */,
+				3474F6BB1832A87B00497D24 /* MobileCoreServices.framework */,
+				3474F6B91832A87400497D24 /* libz.1.1.3.dylib */,
+				3474F6B71832A86A00497D24 /* CoreLocation.framework */,
+				3474F6B51832A85E00497D24 /* CFNetwork.framework */,
+				3474F6B31832A85900497D24 /* AudioToolbox.framework */,
 				3474F67B1832A7DD00497D24 /* Foundation.framework */,
 				3474F67D1832A7DD00497D24 /* CoreGraphics.framework */,
 				3474F67F1832A7DD00497D24 /* UIKit.framework */,
@@ -117,10 +187,30 @@
 				3474F68A1832A7DD00497D24 /* AppDelegate.h */,
 				3474F68B1832A7DD00497D24 /* AppDelegate.m */,
 				3474F68D1832A7DD00497D24 /* Main_iPhone.storyboard */,
-				3474F6901832A7DD00497D24 /* Main_iPad.storyboard */,
 				3474F6931832A7DD00497D24 /* ViewController.h */,
 				3474F6941832A7DD00497D24 /* ViewController.m */,
 				3474F6961832A7DD00497D24 /* Images.xcassets */,
+				3474F6C71832A90B00497D24 /* CartHandler.h */,
+				3474F6C81832A90B00497D24 /* CartHandler.m */,
+				3474F6C91832A90B00497D24 /* einsteinCell.h */,
+				3474F6CA1832A90B00497D24 /* einsteinCell.m */,
+				3474F6CB1832A90B00497D24 /* einsteinTableViewController.h */,
+				3474F6CC1832A90B00497D24 /* einsteinTableViewController.m */,
+				3474F6D01832A91C00497D24 /* EZ Dining-Info.plist */,
+				3474F6D11832A91C00497D24 /* EZ Dining-Prefix.pch */,
+				3474F6D21832A91C00497D24 /* FoodItem.h */,
+				3474F6D31832A91C00497D24 /* FoodItem.m */,
+				3474F6D61832A93200497D24 /* main.m */,
+				3474F6D71832A93200497D24 /* sandCell.h */,
+				3474F6D81832A93200497D24 /* sandCell.m */,
+				3474F6D91832A93200497D24 /* sandfacViewController.h */,
+				3474F6DA1832A93200497D24 /* sandfacViewController.m */,
+				3474F6DB1832A93200497D24 /* tacosTableViewController.h */,
+				3474F6DC1832A93200497D24 /* tacosTableViewController.m */,
+				3474F6DD1832A93200497D24 /* vgsCell.h */,
+				3474F6DE1832A93200497D24 /* vgsCell.m */,
+				3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */,
+				3474F6E01832A93200497D24 /* vgsTableViewViewController.m */,
 				3474F6821832A7DD00497D24 /* Supporting Files */,
 			);
 			path = "EZ Dining";
@@ -231,10 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3474F6921832A7DD00497D24 /* Main_iPad.storyboard in Resources */,
 				3474F6971832A7DD00497D24 /* Images.xcassets in Resources */,
 				3474F68F1832A7DD00497D24 /* Main_iPhone.storyboard in Resources */,
 				3474F6861832A7DD00497D24 /* InfoPlist.strings in Resources */,
+				3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */,
+				3474F6CD1832A90B00497D24 /* CartHandler.m in Sources */,
+				3474F6D51832A91C00497D24 /* FoodItem.m in Sources */,
+				3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */,
+				3474F6E21832A93200497D24 /* sandCell.m in Sources */,
+				3474F6E51832A93200497D24 /* vgsCell.m in Sources */,
 				3474F6951832A7DD00497D24 /* ViewController.m in Sources */,
+				3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */,
+				3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */,
 				3474F68C1832A7DD00497D24 /* AppDelegate.m in Sources */,
+				3474F6CE1832A90B00497D24 /* einsteinCell.m in Sources */,
+				3474F6E11832A93200497D24 /* main.m in Sources */,
 				3474F6881832A7DD00497D24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,14 +392,6 @@
 				3474F68E1832A7DD00497D24 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		3474F6901832A7DD00497D24 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3474F6911832A7DD00497D24 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		3474F6A61832A7DD00497D24 /* InfoPlist.strings */ = {
@@ -392,6 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
 				INFOPLIST_FILE = "EZ Dining/EZ Dining-Info.plist";
@@ -405,6 +501,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
 				INFOPLIST_FILE = "EZ Dining/EZ Dining-Info.plist";
