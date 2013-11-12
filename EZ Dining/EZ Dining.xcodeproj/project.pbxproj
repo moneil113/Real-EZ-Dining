@@ -36,12 +36,18 @@
 		3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6CC1832A90B00497D24 /* einsteinTableViewController.m */; };
 		3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3474F6D01832A91C00497D24 /* EZ Dining-Info.plist */; };
 		3474F6D51832A91C00497D24 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D31832A91C00497D24 /* FoodItem.m */; };
-		3474F6E11832A93200497D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D61832A93200497D24 /* main.m */; };
 		3474F6E21832A93200497D24 /* sandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6D81832A93200497D24 /* sandCell.m */; };
 		3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DA1832A93200497D24 /* sandfacViewController.m */; };
 		3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DC1832A93200497D24 /* tacosTableViewController.m */; };
 		3474F6E51832A93200497D24 /* vgsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DE1832A93200497D24 /* vgsCell.m */; };
 		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
+		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
+		A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */; };
+		A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB431832AC0100D5018B /* SANDWICHbutton2.png */; };
+		A524BB461832AC0500D5018B /* TACOSbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB451832AC0500D5018B /* TACOSbutton2.png */; };
+		A524BB481832AC0C00D5018B /* VGSbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB471832AC0C00D5018B /* VGSbutton.png */; };
+		A59492401832C542009E74EB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A594923F1832C542009E74EB /* Button.png */; };
+		A59492421832C5D0009E74EB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59492411832C5D0009E74EB /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +100,6 @@
 		3474F6D11832A91C00497D24 /* EZ Dining-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZ Dining-Prefix.pch"; sourceTree = "<group>"; };
 		3474F6D21832A91C00497D24 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
 		3474F6D31832A91C00497D24 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
-		3474F6D61832A93200497D24 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3474F6D71832A93200497D24 /* sandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandCell.h; sourceTree = "<group>"; };
 		3474F6D81832A93200497D24 /* sandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandCell.m; sourceTree = "<group>"; };
 		3474F6D91832A93200497D24 /* sandfacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandfacViewController.h; sourceTree = "<group>"; };
@@ -105,6 +110,13 @@
 		3474F6DE1832A93200497D24 /* vgsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsCell.m; sourceTree = "<group>"; };
 		3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgsTableViewViewController.h; sourceTree = "<group>"; };
 		3474F6E01832A93200497D24 /* vgsTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTableViewViewController.m; sourceTree = "<group>"; };
+		A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bg_Texture___wood_by_nortago.jpg"; sourceTree = "<group>"; };
+		A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EINSTEINbutton2.png; sourceTree = "<group>"; };
+		A524BB431832AC0100D5018B /* SANDWICHbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SANDWICHbutton2.png; sourceTree = "<group>"; };
+		A524BB451832AC0500D5018B /* TACOSbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TACOSbutton2.png; sourceTree = "<group>"; };
+		A524BB471832AC0C00D5018B /* VGSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VGSbutton.png; sourceTree = "<group>"; };
+		A594923F1832C542009E74EB /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		A59492411832C5D0009E74EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 				3474F6B81832A86A00497D24 /* CoreLocation.framework in Frameworks */,
 				3474F67E1832A7DD00497D24 /* CoreGraphics.framework in Frameworks */,
 				3474F6B61832A85E00497D24 /* CFNetwork.framework in Frameworks */,
+				A59492421832C5D0009E74EB /* Parse.framework in Frameworks */,
 				3474F6B41832A85900497D24 /* AudioToolbox.framework in Frameworks */,
 				3474F6801832A7DD00497D24 /* UIKit.framework in Frameworks */,
 				3474F67C1832A7DD00497D24 /* Foundation.framework in Frameworks */,
@@ -163,6 +176,7 @@
 		3474F67A1832A7DD00497D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A59492411832C5D0009E74EB /* Parse.framework */,
 				3474F6C51832A8C100497D24 /* Parse.framework */,
 				3474F6C31832A89800497D24 /* SystemConfiguration.framework */,
 				3474F6C11832A89000497D24 /* StoreKit.framework */,
@@ -200,7 +214,6 @@
 				3474F6D11832A91C00497D24 /* EZ Dining-Prefix.pch */,
 				3474F6D21832A91C00497D24 /* FoodItem.h */,
 				3474F6D31832A91C00497D24 /* FoodItem.m */,
-				3474F6D61832A93200497D24 /* main.m */,
 				3474F6D71832A93200497D24 /* sandCell.h */,
 				3474F6D81832A93200497D24 /* sandCell.m */,
 				3474F6D91832A93200497D24 /* sandfacViewController.h */,
@@ -211,6 +224,12 @@
 				3474F6DE1832A93200497D24 /* vgsCell.m */,
 				3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */,
 				3474F6E01832A93200497D24 /* vgsTableViewViewController.m */,
+				A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */,
+				A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */,
+				A524BB431832AC0100D5018B /* SANDWICHbutton2.png */,
+				A594923F1832C542009E74EB /* Button.png */,
+				A524BB451832AC0500D5018B /* TACOSbutton2.png */,
+				A524BB471832AC0C00D5018B /* VGSbutton.png */,
 				3474F6821832A7DD00497D24 /* Supporting Files */,
 			);
 			path = "EZ Dining";
@@ -323,6 +342,12 @@
 			files = (
 				3474F6971832A7DD00497D24 /* Images.xcassets in Resources */,
 				3474F68F1832A7DD00497D24 /* Main_iPhone.storyboard in Resources */,
+				A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */,
+				A524BB461832AC0500D5018B /* TACOSbutton2.png in Resources */,
+				A524BB481832AC0C00D5018B /* VGSbutton.png in Resources */,
+				A59492401832C542009E74EB /* Button.png in Resources */,
+				A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */,
+				A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */,
 				3474F6861832A7DD00497D24 /* InfoPlist.strings in Resources */,
 				3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */,
 			);
@@ -354,7 +379,6 @@
 				3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */,
 				3474F68C1832A7DD00497D24 /* AppDelegate.m in Sources */,
 				3474F6CE1832A90B00497D24 /* einsteinCell.m in Sources */,
-				3474F6E11832A93200497D24 /* main.m in Sources */,
 				3474F6881832A7DD00497D24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +511,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
+					"/Users/ewassena/Desktop/Real-EZ-Dining/EZ\\ Dining",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
@@ -504,6 +529,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
+					"/Users/ewassena/Desktop/Real-EZ-Dining/EZ\\ Dining",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
@@ -574,6 +600,7 @@
 				3474F6AF1832A7DD00497D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3474F6B01832A7DD00497D24 /* Build configuration list for PBXNativeTarget "EZ DiningTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +609,7 @@
 				3474F6B21832A7DD00497D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
