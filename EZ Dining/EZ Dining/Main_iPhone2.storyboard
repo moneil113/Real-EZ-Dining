@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M0d-QX-mT9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M0d-QX-mT9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -246,9 +246,9 @@
                                 <color key="highlightedColor" red="0.0040473892569999996" green="0.001176489046" blue="0.0047034438779999998" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obu-D1-og7">
-                                <rect key="frame" x="-38" y="118" width="232" height="252"/>
+                                <rect key="frame" x="20" y="172" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VGs" image="VGSbutton.png">
+                                <state key="normal" title="VGs" image="VGSbutton3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -256,9 +256,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJP-an-2Id">
-                                <rect key="frame" x="-40" y="308" width="236" height="257"/>
+                                <rect key="frame" x="20" y="358" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sandwich Factory" image="SANDWICHbutton2.png">
+                                <state key="normal" title="Sandwich Factory" image="SANDWICHbutton3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -266,9 +266,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-0l-zAK">
-                                <rect key="frame" x="117" y="114" width="237" height="260"/>
+                                <rect key="frame" x="160" y="172" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="TACOSbutton2.png">
+                                <state key="normal" backgroundImage="TACOSbutton3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -276,9 +276,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nih-6i-9T2">
-                                <rect key="frame" x="119" y="312" width="232" height="248"/>
+                                <rect key="frame" x="160" y="358" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="EINSTEINbutton2.png">
+                                <state key="normal" image="EINSTEINbutton3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -656,10 +656,10 @@
     </scenes>
     <resources>
         <image name="Bg_Texture___wood_by_nortago.jpg" width="540" height="640"/>
-        <image name="EINSTEINbutton2.png" width="540" height="640"/>
-        <image name="SANDWICHbutton2.png" width="540" height="640"/>
-        <image name="TACOSbutton2.png" width="540" height="640"/>
-        <image name="VGSbutton.png" width="540" height="640"/>
+        <image name="EINSTEINbutton3.png" width="318" height="320"/>
+        <image name="SANDWICHbutton3.png" width="318" height="320"/>
+        <image name="TACOSbutton3.png" width="318" height="320"/>
+        <image name="VGSbutton3.png" width="318" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
