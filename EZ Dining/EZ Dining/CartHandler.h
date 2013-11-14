@@ -19,6 +19,7 @@
     ViewController *owner;
 }
 
+- (id) init:(ViewController*) creator;
 - (void) setPriceForTime:(double)price;
 - (double) getTotalPrice;
 - (void) addItem:(NSDictionary *)newItem;
@@ -26,5 +27,6 @@
 - (void) changeQuantity:(int) quantity forName:(NSString *) name;
 - (double) getAmountRemaining;
 - (void) updateTotal:(double) newPrice;
+- (void) addCost:(double) costToAdd;
 
 @end

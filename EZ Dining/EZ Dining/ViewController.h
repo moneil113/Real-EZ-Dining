@@ -17,6 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
 
+- (IBAction)clearCart:(id)sender;
 - (void) update:(double)newTotal;
+- (CartHandler*) getCart;
 
 @end

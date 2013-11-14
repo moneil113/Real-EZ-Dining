@@ -8,6 +8,7 @@
 
 #import "BasicCell.h"
 #import "ViewController.h"
+#import "CartHandler.h"
 
 @implementation BasicCell
 
@@ -26,7 +27,12 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)stepperAction:(UIStepper *)sender {
+- (void) setPrice:(double)newPrice
+{
+    price = newPrice;
+}
+
+- (IBAction)addToCart:(id)sender {
     ViewController *view;
     
     for (UIView* next = [self superview]; next; next = next.superview)
@@ -39,11 +45,7 @@
         }
     }
     
-    view.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f", sender.value];
-    
-    
-    //ViewController *view = (ViewController*)self.superview.superview;
-    //view.totalPriceLabel.text = [NSString stringWithFormat:@"$%f", sender.value];
+    CartHandler *tempCart = [view getCart];
+    [tempCart addCost:price];
 }
-
 @end

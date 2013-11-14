@@ -14,7 +14,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    cart = [[CartHandler alloc] init];
+    cart = [[CartHandler alloc] init:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -24,8 +24,16 @@
 }
 
 - (void) update:(double)newTotal {
-    NSLog(@"in update method");
-    self.totalPriceLabel.text = [NSString stringWithFormat:@"$%f", newTotal];
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f", newTotal];
+}
+
+- (CartHandler*) getCart
+{
+    return cart;
+}
+
+- (IBAction)clearCart:(id)sender {
+    [cart updateTotal:0];
 }
 
 @end

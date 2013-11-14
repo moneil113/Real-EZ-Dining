@@ -16,8 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UIStepper *stepper;
-- (IBAction)stepperAction:(UIStepper *)sender;
+
+- (IBAction)addToCart:(id)sender;
+- (void) setPrice:(double) newPrice;
 
 
 @end

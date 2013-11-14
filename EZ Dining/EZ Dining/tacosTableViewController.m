@@ -91,9 +91,7 @@
     // Configure the cell...
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
     cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    cell.stepper.stepValue = [food[@"foodPrice"] doubleValue];
-    cell.stepper.maximumValue = 100;
-    
+    [cell setPrice:[food[@"foodPrice"] doubleValue]];    
     
     return cell;
 }

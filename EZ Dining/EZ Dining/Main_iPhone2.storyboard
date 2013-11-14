@@ -49,19 +49,21 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="D3v-GF-buo">
-                                            <rect key="frame" x="206" y="16" width="94" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-r4-xjp">
+                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Add to Cart">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <connections>
-                                                <action selector="stepperAction:" destination="zBe-Bf-4j4" eventType="valueChanged" id="guK-XU-grf"/>
+                                                <action selector="addToCart:" destination="zBe-Bf-4j4" eventType="touchUpInside" id="Nvc-ho-05b"/>
                                             </connections>
-                                        </stepper>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="07V-7h-NBa" id="fGx-jL-hNw"/>
                                     <outlet property="priceLabel" destination="0FN-8c-DMg" id="Cas-NE-9nF"/>
-                                    <outlet property="stepper" destination="D3v-GF-buo" id="DEE-D9-71v"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -79,7 +81,7 @@
         <scene sceneID="uQ5-tF-uVC">
             <objects>
                 <tableViewController id="hBi-iD-XoU" customClass="einsteinTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="dH3-pB-MHL">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="dH3-pB-MHL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,19 +106,21 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-J7-sck">
-                                            <rect key="frame" x="206" y="16" width="94" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8s-fg-0GA">
+                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Add to Cart">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <connections>
-                                                <action selector="stepperAction:" destination="dNS-In-vAU" eventType="valueChanged" id="Yih-G6-e7S"/>
+                                                <action selector="addToCart:" destination="dNS-In-vAU" eventType="touchUpInside" id="TMi-S8-uhr"/>
                                             </connections>
-                                        </stepper>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="0xF-eO-HVh" id="go3-M0-YrC"/>
                                     <outlet property="priceLabel" destination="LH6-f3-ViA" id="GTB-Q9-8xt"/>
-                                    <outlet property="stepper" destination="LaA-J7-sck" id="MIn-lD-Xz7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -190,19 +194,21 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-kc-hE4">
-                                            <rect key="frame" x="206" y="16" width="94" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gww-N2-rJx">
+                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Add to Cart">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <connections>
-                                                <action selector="stepperAction:" destination="1sM-xx-q9L" eventType="valueChanged" id="9CL-hY-exZ"/>
+                                                <action selector="addToCart:" destination="1sM-xx-q9L" eventType="touchUpInside" id="g7I-Mn-Vtb"/>
                                             </connections>
-                                        </stepper>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="MQl-gW-jOj" id="5KJ-Je-RL5"/>
                                     <outlet property="priceLabel" destination="EZX-XH-73D" id="icU-0H-aHt"/>
-                                    <outlet property="stepper" destination="Kxo-kc-hE4" id="2Io-bq-b4B"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -412,19 +418,21 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6FM-2l-Zse">
-                                            <rect key="frame" x="206" y="16" width="94" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ma-yd-Jsh">
+                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Add to Cart">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <connections>
-                                                <action selector="stepperAction:" destination="Erl-4S-MU1" eventType="valueChanged" id="oPr-Xq-u1X"/>
+                                                <action selector="addToCart:" destination="Erl-4S-MU1" eventType="touchUpInside" id="nAs-35-AHS"/>
                                             </connections>
-                                        </stepper>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="sQV-HI-3AE" id="ZKt-FK-hQG"/>
                                     <outlet property="priceLabel" destination="GP5-Ad-3Ah" id="MDZ-5c-vuL"/>
-                                    <outlet property="stepper" destination="6FM-2l-Zse" id="Sup-Hj-wt2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -542,6 +550,9 @@
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearCart:" destination="LCN-JN-2gm" eventType="touchUpInside" id="ISs-pv-QBq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cG-3f-yL3">
                                 <rect key="frame" x="234" y="527" width="66" height="30"/>
@@ -647,6 +658,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DAC-Fs-fI0"/>
+        <segue reference="Whk-pj-CDy"/>
     </inferredMetricsTieBreakers>
 </document>

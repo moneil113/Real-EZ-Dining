@@ -64,7 +64,12 @@
 - (void) updateTotal:(double)newPrice
 {
     totalPrice = newPrice;
-    
+    [owner update:totalPrice];
+}
+
+- (void) addCost:(double)costToAdd {
+    totalPrice += costToAdd;
+    [owner update:totalPrice];
 }
 
 @end
