@@ -7,7 +7,7 @@
 //
 
 #import "vgsTableViewViewController.h"
-#import "vgsCell.h"
+#import "BasicCell.h"
 #import <Parse/Parse.h>
 
 @interface vgsTableViewViewController ()
@@ -81,18 +81,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"vgFoodCell";
-    vgsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"vgsCell";
+    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     PFObject *food = self.foods[indexPath.row];
     
     
     // Configure the cell...
-    cell.vgName.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.vgPrice.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    cell.vgStepper.stepValue = [food[@"foodPrice"] doubleValue];
-    cell.vgStepper.maximumValue = 100;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
+    cell.stepper.stepValue = [food[@"foodPrice"] doubleValue];
+    cell.stepper.maximumValue = 100;
     
     return cell;
 }

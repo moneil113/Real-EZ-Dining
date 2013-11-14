@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class CartHandler;
+
 @interface ViewController : UIViewController
+{
+    CartHandler *cart;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
+
+- (void) update:(double)newTotal;
 
 @end

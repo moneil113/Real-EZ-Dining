@@ -7,7 +7,7 @@
 //
 
 #import "sandfacViewController.h"
-#import "sandCell.h"
+#import "BasicCell.h"
 #import <Parse/Parse.h>
 
 @interface sandfacViewController ()
@@ -81,18 +81,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"sandFoodCell";
-    sandCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"sandCell";
+    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     PFObject *food = self.foods[indexPath.row];
     
     
     // Configure the cell...
-    cell.sandName.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.sandPrice.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    cell.sandStep.stepValue = [food[@"foodPrice"] doubleValue];
-    cell.sandStep.maximumValue = 100;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
+    cell.stepper.stepValue = [food[@"foodPrice"] doubleValue];
+    cell.stepper.maximumValue = 100;
     
     
     return cell;

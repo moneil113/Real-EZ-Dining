@@ -7,7 +7,7 @@
 //
 
 #import "tacosTableViewController.h"
-#import "vgsCell.h"
+#import "BasicCell.h"
 #import <Parse/Parse.h>
 
 @interface tacosTableViewController ()
@@ -81,18 +81,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"tacosFoodCell";
-    vgsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"tacosCell";
+    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     PFObject *food = self.foods[indexPath.row];
     
     
     // Configure the cell...
-    cell.tacosName.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.tacosPrice.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    cell.tacosStepper.stepValue = [food[@"foodPrice"] doubleValue];
-    cell.tacosStepper.maximumValue = 100;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
+    cell.stepper.stepValue = [food[@"foodPrice"] doubleValue];
+    cell.stepper.maximumValue = 100;
     
     
     return cell;

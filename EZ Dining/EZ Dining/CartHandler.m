@@ -8,14 +8,16 @@
 
 #import "CartHandler.h"
 #import "FoodItem.h"
+#import "ViewController.h"
 
 @implementation CartHandler
 
-- (id) init {
+- (id) init:(ViewController*) creator {
     self = [super init];
     
     if (self) {
         totalPrice = 0;
+        owner = creator;
     }
     return self;
 }
@@ -57,6 +59,12 @@
     }
 
     totalPrice += ([food getPrice] * delta);
+}
+
+- (void) updateTotal:(double)newPrice
+{
+    totalPrice = newPrice;
+    
 }
 
 @end

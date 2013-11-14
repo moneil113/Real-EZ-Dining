@@ -7,23 +7,25 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "CartHandler.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    cart = [[CartHandler alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) update:(double)newTotal {
+    NSLog(@"in update method");
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"$%f", newTotal];
 }
 
 @end

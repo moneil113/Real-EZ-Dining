@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class ViewController;
 
 @interface CartHandler : NSObject
 
@@ -15,13 +16,15 @@
     double totalPrice;
     NSDictionary *foodItem;
     double timePrice;
+    ViewController *owner;
 }
 
-- (void) setPriceForTime:(double) price;
+- (void) setPriceForTime:(double)price;
 - (double) getTotalPrice;
 - (void) addItem:(NSDictionary *)newItem;
 - (void) deleteItem:(NSString *) name;
 - (void) changeQuantity:(int) quantity forName:(NSString *) name;
 - (double) getAmountRemaining;
+- (void) updateTotal:(double) newPrice;
 
 @end

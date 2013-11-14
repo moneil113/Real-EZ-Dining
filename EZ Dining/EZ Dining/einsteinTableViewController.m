@@ -7,7 +7,7 @@
 //
 
 #import "einsteinTableViewController.h"
-#import "vgsCell.h"
+#import "BasicCell.h"
 #import <Parse/Parse.h>
 
 @interface einsteinTableViewController ()
@@ -81,18 +81,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"einsteinFoodCell";
-    vgsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"einsteinCell" forIndexPath:indexPath];
     
     // Configure the cell...
     PFObject *food = self.foods[indexPath.row];
     
     
     // Configure the cell...
-    cell.einsteinName.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.einsteinPrice.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    cell.einsteinStepper.stepValue = [food[@"foodPrice"] doubleValue];
-    cell.einsteinStepper.maximumValue = 100;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
+    cell.stepper.stepValue = [food[@"foodPrice"] doubleValue];
+    cell.stepper.maximumValue = 100;
     
     
     return cell;

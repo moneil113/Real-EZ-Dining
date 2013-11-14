@@ -2,7 +2,7 @@
 //  BasicCell.h
 //  EZ Dining
 //
-//  Created by Matthew O'Neil on 11/12/13.
+//  Created by Matthew O'Neil on 11/13/13.
 //  Copyright (c) 2013 Matthew O'Neil. All rights reserved.
 //
 
@@ -10,9 +10,14 @@
 
 @interface BasicCell : UITableViewCell
 {
-    UITextView *name;
-    UITextView *price;
-    UIStepper *stepper;
+    double price;
+    NSString *name;
 }
+
+@property (weak, nonatomic) IBOutlet UITextView *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+- (IBAction)stepperAction:(UIStepper *)sender;
+
 
 @end
