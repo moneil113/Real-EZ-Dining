@@ -40,6 +40,8 @@
 		3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DC1832A93200497D24 /* tacosTableViewController.m */; };
 		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
 		34BC6EAF1834026300149125 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BC6EAE1834026300149125 /* BasicCell.m */; };
+		34F6C7A2183C027D007541F9 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6C7A1183C027D007541F9 /* CartViewController.m */; };
+		34F6C7A5183C072F007541F9 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6C7A4183C072F007541F9 /* CartCell.m */; };
 		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
 		A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */; };
 		A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB431832AC0100D5018B /* SANDWICHbutton2.png */; };
@@ -110,6 +112,10 @@
 		3474F6E01832A93200497D24 /* vgsTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTableViewViewController.m; sourceTree = "<group>"; };
 		34BC6EAD1834026300149125 /* BasicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCell.h; sourceTree = "<group>"; };
 		34BC6EAE1834026300149125 /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
+		34F6C7A0183C027D007541F9 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		34F6C7A1183C027D007541F9 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		34F6C7A3183C072F007541F9 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
+		34F6C7A4183C072F007541F9 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
 		A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bg_Texture___wood_by_nortago.jpg"; sourceTree = "<group>"; };
 		A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EINSTEINbutton2.png; sourceTree = "<group>"; };
 		A524BB431832AC0100D5018B /* SANDWICHbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SANDWICHbutton2.png; sourceTree = "<group>"; };
@@ -205,9 +211,13 @@
 				3474F68A1832A7DD00497D24 /* AppDelegate.h */,
 				3474F68B1832A7DD00497D24 /* AppDelegate.m */,
 				34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */,
-				3474F6931832A7DD00497D24 /* ViewController.h */,
+				34F6C7A3183C072F007541F9 /* CartCell.h */,
+				34F6C7A4183C072F007541F9 /* CartCell.m */,
+				34F6C7A0183C027D007541F9 /* CartViewController.h */,
+				34F6C7A1183C027D007541F9 /* CartViewController.m */,
 				3413F86C18355CF8001A680C /* MenuViewController.h */,
 				3413F86D18355CF8001A680C /* MenuViewController.m */,
+				3474F6931832A7DD00497D24 /* ViewController.h */,
 				3474F6941832A7DD00497D24 /* ViewController.m */,
 				3474F6961832A7DD00497D24 /* Images.xcassets */,
 				34BC6EAD1834026300149125 /* BasicCell.h */,
@@ -379,8 +389,10 @@
 			files = (
 				3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */,
 				3474F6CD1832A90B00497D24 /* CartHandler.m in Sources */,
+				34F6C7A5183C072F007541F9 /* CartCell.m in Sources */,
 				3474F6D51832A91C00497D24 /* FoodItem.m in Sources */,
 				3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */,
+				34F6C7A2183C027D007541F9 /* CartViewController.m in Sources */,
 				3474F6951832A7DD00497D24 /* ViewController.m in Sources */,
 				3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */,
 				3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */,
