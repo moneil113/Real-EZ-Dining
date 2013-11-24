@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CartHandler.h"
+#import "CartViewController.h"
 
 @implementation ViewController
 
@@ -48,6 +49,13 @@
 
 - (IBAction)clearCart:(id)sender {
     [cart updateTotal:0];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"GoToCart"]) {
+        CartViewController *myVC = [segue destinationViewController];
+        [myVC setCart:cart];
+    }
 }
 
 @end
