@@ -66,7 +66,7 @@
         cell = [[CartCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cartCell"];
     }
     
-    NSMutableArray *items = [cart getCartItems];
+    NSMutableArray *items = [[cart getCartItems] copy];
 
     FoodItem *tempfood = [items objectAtIndex:indexPath.row];
 
