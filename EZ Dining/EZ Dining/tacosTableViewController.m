@@ -90,8 +90,10 @@
     
     // Configure the cell...
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    [cell setPrice:[food[@"foodPrice"] doubleValue]];    
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
+    [cell setPrice:[food[@"foodPrice"] doubleValue]];
+    [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
+
     
     return cell;
 }

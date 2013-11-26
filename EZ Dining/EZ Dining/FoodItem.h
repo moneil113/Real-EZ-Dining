@@ -15,7 +15,7 @@
     int quantity;
 }
 
-- (id) init:(NSDictionary *)item;
+- (id) initWithName:(NSString *)newName andPrice:(double)newPrice;
 - (int) getQuantity;
 - (void) setQuantity:(int) newNum;
 - (double) getPrice;

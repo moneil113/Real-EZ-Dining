@@ -10,13 +10,13 @@
 
 @implementation FoodItem
 
-- (id) init:(NSDictionary *)item
+- (id) initWithName:(NSString *)newName andPrice:(double)newPrice
 {
     self = [super init];
     
     if (self) {
-        name = [item objectForKey:@"name"];
-        price = [[item objectForKey:@"price"] doubleValue];
+        name = newName;
+        price = newPrice;
         quantity = 1;
     }
     
