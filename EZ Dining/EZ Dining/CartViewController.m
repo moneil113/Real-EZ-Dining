@@ -45,9 +45,10 @@
 {
     CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cartCell"];
     
-    cell.name = cart.
+    //cell.name = cart.
     
     return cell;
+    
 }
 
 @end
