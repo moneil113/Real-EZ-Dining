@@ -32,6 +32,11 @@
     price = newPrice;
 }
 
+- (void) setName:(NSString *)newName
+{
+    name = newName;
+}
+
 - (IBAction)addToCart:(id)sender {
     ViewController *view;
     
@@ -45,7 +50,6 @@
         }
     }
     
-    CartHandler *tempCart = [view getCart];
-    [tempCart addCost:price];
+    [[view getCart] addItemForName:name andPrice:price];
 }
 @end

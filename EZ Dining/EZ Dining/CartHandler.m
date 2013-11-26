@@ -18,6 +18,7 @@
     if (self) {
         totalPrice = 0;
         owner = creator;
+        cartItems = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -34,16 +35,17 @@
     return timePrice - totalPrice;
 }
 
-- (void) addItem:(NSDictionary *)newItem {
-    FoodItem *temp = [[FoodItem alloc] init:newItem];
+- (void) addItemForName:(NSString *)newName andPrice:(double)newPrice {
+    FoodItem *temp = [[FoodItem alloc] initWithName:newName andPrice:newPrice];
     
-    [cartItems setObject:temp forKey:[temp getName]];
+    [cartItems addObject:temp];
     
     totalPrice += temp.getPrice;
+    [owner update:totalPrice];
 }
 
 - (void) deleteItem:(NSString*) name{
-    [cartItems removeObjectForKey:name];
+    //[cartItems rem:name];
 }
 
 - (void) changeQuantity:(int)quantity forName:(NSString *)name {
@@ -70,6 +72,11 @@
 - (void) addCost:(double)costToAdd {
     totalPrice += costToAdd;
     [owner update:totalPrice];
+}
+
+- (NSMutableArray*) getCartItems
+{
+    return cartItems;
 }
 
 @end

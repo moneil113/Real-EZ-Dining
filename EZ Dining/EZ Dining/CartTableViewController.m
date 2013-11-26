@@ -1,20 +1,22 @@
 //
-//  vgsTableViewViewController.m
+//  CartTableViewController.m
 //  EZ Dining
 //
-//  Created by Jason Krein on 11/5/13.
-//  Copyright (c) 2013 DJMMEK POW. All rights reserved.
+//  Created by Matthew O'Neil on 11/22/13.
+//  Copyright (c) 2013 Matthew O'Neil. All rights reserved.
 //
 
-#import "vgsTableViewViewController.h"
-#import "BasicCell.h"
-#import <Parse/Parse.h>
+#import "CartTableViewController.h"
+#import "CartHandler.h"
+#import "CartCell.h"
+#import "FoodItem.h"
+#import "ViewController.h"
 
-@interface vgsTableViewViewController ()
-@property NSArray *foods;
+@interface CartTableViewController ()
+
 @end
 
-@implementation vgsTableViewViewController
+@implementation CartTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -25,37 +27,15 @@
     return self;
 }
 
-
--(void) loadPeopleCallback: (NSArray*) foods error:(NSError*) error
-{
-    if (!error)
-    {
-        self.foods = foods;
-        [self.tableView reloadData];
-    }
-}
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
-                  clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
-    
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"allData"];
-    [query whereKey:@"restaurantName" equalTo:@"VGs"];
-    
-    //Could use [query whereKey...] instead to constrain the array
-    [query findObjectsInBackgroundWithTarget:self
-                                    selector:@selector(loadPeopleCallback:error:)];
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,7 +48,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
@@ -76,26 +55,36 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.foods.count;
+    return [[cart getCartItems] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"vgsCell";
-    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cartCell"];
     
-    // Configure the cell...
-    PFObject *food = self.foods[indexPath.row];
+    if (cell == nil) {
+        cell = [[CartCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cartCell"];
+    }
     
-    
-    // Configure the cell...
-    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
-    [cell setPrice:[food[@"foodPrice"] doubleValue]];
-    [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
-    
+    NSMutableArray *items = [cart getCartItems];
+
+    FoodItem *tempfood = [items objectAtIndex:indexPath.row];
+
+    if ([items count] == 0) {
+        NSLog(@"Cart is empty");
+    } else {
+        NSLog([NSString stringWithFormat:@"cell: %i", indexPath.row]);
+        cell.name.text = [tempfood getName];
+        cell.quantityLabel.text = [NSString stringWithFormat:@"%d",[tempfood getQuantity]];
+        cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [tempfood getQuantity] * [tempfood getPrice]];
+    }
     
     return cell;
+}
+
+- (void)setCart:(CartHandler*)newCart
+{
+    cart = newCart;
 }
 
 /*
