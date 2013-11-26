@@ -55,25 +55,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [[cart getCartItems] count];
+    return [items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cartCell"];
-    
-    if (cell == nil) {
-        cell = [[CartCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cartCell"];
-    }
-    
-    NSMutableArray *items = [[cart getCartItems] copy];
-
-    FoodItem *tempfood = [items objectAtIndex:indexPath.row];
+    CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cartCell" forIndexPath:indexPath];
+        
+    FoodItem *tempfood = items[indexPath.row];
 
     if ([items count] == 0) {
         NSLog(@"Cart is empty");
     } else {
-        NSLog([NSString stringWithFormat:@"cell: %i", indexPath.row]);
+        //NSLog(@"cell: %i", indexPath.row);
         cell.name.text = [tempfood getName];
         cell.quantityLabel.text = [NSString stringWithFormat:@"%d",[tempfood getQuantity]];
         cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [tempfood getQuantity] * [tempfood getPrice]];
@@ -84,7 +78,7 @@
 
 - (void)setCart:(CartHandler*)newCart
 {
-    cart = newCart;
+    items = [newCart getCartItems];
 }
 
 /*

@@ -11,7 +11,7 @@
 
 @interface CartTableViewController : UITableViewController
 {
-    CartHandler *cart;
+    NSArray *items;
 }
 
 - (void) setCart:(CartHandler*)newCart;
