@@ -492,9 +492,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="YEx-K5-EFP" id="Y3m-qd-HkY"/>
                         <outlet property="searchDisplayController" destination="Q5u-Mp-4DK" id="BZa-OJ-oGB"/>
                         <outlet property="totalPriceLabel" destination="p8B-yX-piL" id="vbD-YE-rFm"/>
-                        <outlet property="vgsBar" destination="YEx-K5-EFP" id="hO6-VL-TOM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnP-Ds-Ndt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -664,6 +664,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="ZbR-1p-7if" id="ENI-kW-ixd"/>
                         <outlet property="searchDisplayController" destination="Ufd-d0-wnD" id="kGh-Rm-Q45"/>
                         <outlet property="totalPriceLabel" destination="htH-W2-epq" id="wwO-Fq-Vbp"/>
                     </connections>
@@ -738,10 +739,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gom-vF-Tk2">
-                                <rect key="frame" x="0.0" y="65" width="320" height="44"/>
+                            <searchBar contentMode="bottom" fixedFrame="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gom-vF-Tk2">
+                                <rect key="frame" x="0.0" y="65" width="320" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="LCN-JN-2gm" id="F6F-zM-iRI"/>
                                 </connections>
@@ -770,8 +775,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="gom-vF-Tk2" id="pKT-R0-Pn6"/>
                         <outlet property="searchDisplayController" destination="Xzd-OP-3UK" id="sxm-Kj-ygl"/>
-                        <outlet property="tacosBar" destination="gom-vF-Tk2" id="pFh-HD-FKg"/>
                         <outlet property="totalPriceLabel" destination="1GS-fx-IFV" id="8tg-ze-V9u"/>
                     </connections>
                 </viewController>
@@ -877,6 +882,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="sTJ-bD-Y4s" id="oW1-lg-cqE"/>
                         <outlet property="searchDisplayController" destination="1Ts-wq-4Fb" id="FQq-zI-nUd"/>
                         <outlet property="totalPriceLabel" destination="Qhb-NN-O8g" id="oOu-BJ-7Ft"/>
                     </connections>

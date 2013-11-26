@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface tacosTableViewController : UITableViewController
+@property UISearchBar *tacosSearchBar;
 
 @end

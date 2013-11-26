@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CartHandler.h"
 #import "CartViewController.h"
+#import "tacosTableViewController.h"
 
 @interface ViewController()
     @property NSArray *foods;
@@ -68,8 +69,11 @@
     }
     if([segue.identifier isEqualToString:@"tacoSegue"])
     {
-        self.tacosBar.delegate = segue.destinationViewController;
+        self.searchBar.delegate = segue.destinationViewController;
         self.searchDisplayController.searchResultsDataSource = segue.destinationViewController;
+        
+        tacosTableViewController *searchVC = [segue destinationViewController];
+        searchVC.tacosSearchBar = self.searchBar;
     }
 }
 

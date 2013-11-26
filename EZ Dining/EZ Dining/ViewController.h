@@ -16,8 +16,8 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
-@property (weak, nonatomic) IBOutlet UISearchBar *vgsBar;
-@property (weak, nonatomic) IBOutlet UISearchBar *tacosBar;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 - (IBAction)clearCart:(id)sender;
 - (void) update:(double)newTotal;

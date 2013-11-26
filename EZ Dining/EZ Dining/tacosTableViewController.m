@@ -16,6 +16,7 @@
 @property NSMutableArray* allStrings;
 @property NSMutableArray* filtered;
 @property BOOL isFiltered;
+
 @end
 
 @implementation tacosTableViewController
@@ -65,7 +66,7 @@
     
 }
 
--(void)tacosBar:(UISearchBar*)tacosBar textDidChange:(NSString*)searchText
+-(void)searchBar:(UISearchBar*)searchBar textDidChange:(NSString*)searchText
 {
     if(searchText.length == 0)
     {
@@ -75,12 +76,14 @@
         self.isFiltered = YES;
         self.filtered = [[NSMutableArray alloc]init];
         
-        for(NSString *str in self.allStrings)
+        for(int i = 0; i < self.allStrings.count; i += 1)
         {
+            NSDictionary *dict = self.allStrings[i];
+            NSString *str = [dict valueForKey:@"foodName"];
             NSRange stringRange = [str rangeOfString:searchText options:(NSCaseInsensitiveSearch)];
             if(stringRange.location != NSNotFound)
             {
-                [self.filtered addObject:str];
+                [self.filtered addObject:dict];
             }
         }
     }
