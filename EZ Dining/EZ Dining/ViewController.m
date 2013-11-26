@@ -35,7 +35,7 @@
 
 - (IBAction)clearCart:(id)sender {
     cart = [[CartHandler alloc] init:self];
-    [cart updateTotal:0];
+    [cart updateTotal];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -43,6 +43,11 @@
         CartTableViewController *myVC = [segue destinationViewController];
         [myVC performSelector:@selector(setCart:)withObject:cart];
     }
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [cart updateTotal];
 }
 
 @end

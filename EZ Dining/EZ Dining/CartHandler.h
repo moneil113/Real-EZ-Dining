@@ -23,10 +23,8 @@
 - (void) setPriceForTime:(double)price;
 - (double) getTotalPrice;
 - (void) addItemForName:(NSString *)newName andPrice:(double)newPrice;
-- (void) deleteItem:(NSString *) name;
-- (void) changeQuantity:(int) quantity forName:(NSString *) name;
 - (double) getAmountRemaining;
-- (void) updateTotal:(double) newPrice;
+- (void) updateTotal;
 - (void) addCost:(double) costToAdd;
 - (NSMutableArray*) getCartItems;
 

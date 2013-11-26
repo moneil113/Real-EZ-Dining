@@ -11,7 +11,5 @@
 @interface CartCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UITextView *name;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *quantityLabel;
-- (IBAction)stepperAction:(id)sender;
 
 @end

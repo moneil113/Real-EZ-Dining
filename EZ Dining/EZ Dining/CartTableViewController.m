@@ -69,8 +69,7 @@
     } else {
         //NSLog(@"cell: %i", indexPath.row);
         cell.name.text = [tempfood getName];
-        cell.quantityLabel.text = [NSString stringWithFormat:@"%d",[tempfood getQuantity]];
-        cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [tempfood getQuantity] * [tempfood getPrice]];
+        cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [tempfood getPrice]];
     }
     
     return cell;
@@ -90,19 +89,18 @@
 }
 */
 
-/*
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [items removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

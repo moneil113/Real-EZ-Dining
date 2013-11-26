@@ -17,19 +17,9 @@
     if (self) {
         name = newName;
         price = newPrice;
-        quantity = 1;
     }
     
     return self;
-}
-
-- (void) setQuantity:(int) newNum {
-    quantity = newNum;
-}
-
-- (int) getQuantity
-{
-    return quantity;
 }
 
 - (double) getPrice

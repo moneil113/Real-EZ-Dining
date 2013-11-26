@@ -44,29 +44,14 @@
     [owner update:totalPrice];
 }
 
-- (void) deleteItem:(NSString*) name{
-    //[cartItems rem:name];
-}
-
-- (void) changeQuantity:(int)quantity forName:(NSString *)name {
-
-    FoodItem *food = [cartItems valueForKey:name];
-    
-    int delta = quantity - [food getQuantity];
-    
-    if (quantity == 0) {
-        [self deleteItem:name];
-    } else {
-        [food setQuantity:quantity];
-    }
-
-    totalPrice += ([food getPrice] * delta);
-}
-
-- (void) updateTotal:(double)newPrice
+- (void) updateTotal
 {
-    totalPrice = newPrice;
-    [owner update:totalPrice];
+    //totalPrice = newPrice;
+    double sum = 0;
+    for (FoodItem *food in cartItems) {
+        sum += [food getPrice];
+    }
+    [owner update:sum];
 }
 
 - (void) addCost:(double)costToAdd {
