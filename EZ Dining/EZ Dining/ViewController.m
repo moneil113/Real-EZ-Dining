@@ -67,14 +67,6 @@
         CartViewController *myVC = [segue destinationViewController];
         [myVC setCart:cart];
     }
-    if([segue.identifier isEqualToString:@"tacoSegue"])
-    {
-        self.searchBar.delegate = segue.destinationViewController;
-        self.searchDisplayController.searchResultsDataSource = segue.destinationViewController;
-        
-        tacosTableViewController *searchVC = [segue destinationViewController];
-        searchVC.tacosSearchBar = self.searchBar;
-    }
 }
 
 

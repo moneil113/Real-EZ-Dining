@@ -39,6 +39,7 @@
 		3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DC1832A93200497D24 /* tacosTableViewController.m */; };
 		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
 		34BC6EAF1834026300149125 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BC6EAE1834026300149125 /* BasicCell.m */; };
+		9426EF3118453E6E009099C6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9426EF3018453E6E009099C6 /* TestViewController.m */; };
 		94C926D91841873400AE6688 /* searchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C926D81841873400AE6688 /* searchViewController.m */; };
 		94EF869A18354E9600A755B6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EF869918354E9600A755B6 /* Parse.framework */; };
 		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
@@ -109,6 +110,8 @@
 		3474F6E01832A93200497D24 /* vgsTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTableViewViewController.m; sourceTree = "<group>"; };
 		34BC6EAD1834026300149125 /* BasicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCell.h; sourceTree = "<group>"; };
 		34BC6EAE1834026300149125 /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
+		9426EF2F18453E6E009099C6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		9426EF3018453E6E009099C6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		94C926D71841873400AE6688 /* searchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchViewController.h; sourceTree = "<group>"; };
 		94C926D81841873400AE6688 /* searchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchViewController.m; sourceTree = "<group>"; };
 		94EF869918354E9600A755B6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				3474F6DC1832A93200497D24 /* tacosTableViewController.m */,
 				3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */,
 				3474F6E01832A93200497D24 /* vgsTableViewViewController.m */,
+				9426EF2F18453E6E009099C6 /* TestViewController.h */,
+				9426EF3018453E6E009099C6 /* TestViewController.m */,
 				3474F6821832A7DD00497D24 /* Supporting Files */,
 			);
 			path = "EZ Dining";
@@ -379,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */,
+				9426EF3118453E6E009099C6 /* TestViewController.m in Sources */,
 				3474F6CD1832A90B00497D24 /* CartHandler.m in Sources */,
 				94C926D91841873400AE6688 /* searchViewController.m in Sources */,
 				3474F6D51832A91C00497D24 /* FoodItem.m in Sources */,
