@@ -59,13 +59,14 @@
 }
 
 - (IBAction)clearCart:(id)sender {
-    [cart updateTotal:0];
+    cart = [[CartHandler alloc] init:self];
+    [cart updateTotal];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"GoToCart"]) {
-        CartViewController *myVC = [segue destinationViewController];
-        [myVC setCart:cart];
+        CartTableViewController *myVC = [segue destinationViewController];
+        [myVC performSelector:@selector(setCart:)withObject:cart];
     }
 }
 

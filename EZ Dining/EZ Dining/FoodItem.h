@@ -12,12 +12,9 @@
 {
     double price;
     NSString *name;
-    int quantity;
 }
 
-- (id) init:(NSDictionary *)item;
-- (int) getQuantity;
-- (void) setQuantity:(int) newNum;
+- (id) initWithName:(NSString *)newName andPrice:(double)newPrice;
 - (double) getPrice;
 - (NSString*) getName;
 

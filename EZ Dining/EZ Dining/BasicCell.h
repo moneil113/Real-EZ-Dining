@@ -18,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
 - (IBAction)addToCart:(id)sender;
-- (void) setPrice:(double) newPrice;
+- (void) setPrice:(double)newPrice;
+- (void) setName:(NSString*)newName;
 
 
 @end

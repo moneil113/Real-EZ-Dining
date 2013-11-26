@@ -12,9 +12,9 @@
 @interface CartHandler : NSObject
 
 {
-    NSMutableDictionary *cartItems;
+    NSMutableArray *cartItems;
     double totalPrice;
-    NSDictionary *foodItem;
+    //NSDictionary *foodItem;
     double timePrice;
     ViewController *owner;
 }
@@ -22,11 +22,10 @@
 - (id) init:(ViewController*) creator;
 - (void) setPriceForTime:(double)price;
 - (double) getTotalPrice;
-- (void) addItem:(NSDictionary *)newItem;
-- (void) deleteItem:(NSString *) name;
-- (void) changeQuantity:(int) quantity forName:(NSString *) name;
+- (void) addItemForName:(NSString *)newName andPrice:(double)newPrice;
 - (double) getAmountRemaining;
-- (void) updateTotal:(double) newPrice;
+- (void) updateTotal;
 - (void) addCost:(double) costToAdd;
+- (NSMutableArray*) getCartItems;
 
 @end

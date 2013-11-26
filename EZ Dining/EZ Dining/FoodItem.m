@@ -10,26 +10,16 @@
 
 @implementation FoodItem
 
-- (id) init:(NSDictionary *)item
+- (id) initWithName:(NSString *)newName andPrice:(double)newPrice
 {
     self = [super init];
     
     if (self) {
-        name = [item objectForKey:@"name"];
-        price = [[item objectForKey:@"price"] doubleValue];
-        quantity = 1;
+        name = newName;
+        price = newPrice;
     }
     
     return self;
-}
-
-- (void) setQuantity:(int) newNum {
-    quantity = newNum;
-}
-
-- (int) getQuantity
-{
-    return quantity;
 }
 
 - (double) getPrice
