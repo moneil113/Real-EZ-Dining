@@ -8,10 +8,14 @@
 
 #import "tacosTableViewController.h"
 #import "BasicCell.h"
+#import "ViewController.h"
 #import <Parse/Parse.h>
 
 @interface tacosTableViewController ()
 @property NSArray *foods;
+@property NSMutableArray* allStrings;
+@property NSMutableArray* filtered;
+@property BOOL isFiltered;
 @end
 
 @implementation tacosTableViewController
@@ -31,6 +35,7 @@
     if (!error)
     {
         self.foods = foods;
+        self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
         [self.tableView reloadData];
     }
 }
@@ -56,7 +61,34 @@
     //Could use [query whereKey...] instead to constrain the array
     [query findObjectsInBackgroundWithTarget:self
                                     selector:@selector(loadPeopleCallback:error:)];
+    
+    
 }
+
+-(void)tacosBar:(UISearchBar*)tacosBar textDidChange:(NSString*)searchText
+{
+    if(searchText.length == 0)
+    {
+        self.isFiltered = NO;
+    }else
+    {
+        self.isFiltered = YES;
+        self.filtered = [[NSMutableArray alloc]init];
+        
+        for(NSString *str in self.allStrings)
+        {
+            NSRange stringRange = [str rangeOfString:searchText options:(NSCaseInsensitiveSearch)];
+            if(stringRange.location != NSNotFound)
+            {
+                [self.filtered addObject:str];
+            }
+        }
+    }
+    [self.tableView reloadData];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -76,22 +108,43 @@
 {
 
     // Return the number of rows in the section.
-    return self.foods.count;
+    NSString *test;
+    if(self.isFiltered)
+    {
+        test = @"Yep";
+    }else
+    {
+        test = @"Nope";
+    }
+    
+    if(self.isFiltered)
+    {
+        return self.filtered.count;
+    }
+    return [self.allStrings count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"tacosCell";
-    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    BasicCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    PFObject* food;
     
     // Configure the cell...
-    PFObject *food = self.foods[indexPath.row];
+    if(!self.isFiltered)
+    {
+        food = [self.allStrings objectAtIndex:indexPath.row];
+    }else
+    {
+        food = [self.filtered objectAtIndex:indexPath.row];
+    }
+    
     
     
     // Configure the cell...
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
     cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    [cell setPrice:[food[@"foodPrice"] doubleValue]];    
+    [cell setPrice:[food[@"foodPrice"] doubleValue]];
     
     return cell;
 }

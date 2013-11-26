@@ -81,7 +81,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BasicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"einsteinCell" forIndexPath:indexPath];
+    BasicCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"einsteinCell" forIndexPath:indexPath];
     
     // Configure the cell...
     PFObject *food = self.foods[indexPath.row];

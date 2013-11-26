@@ -1,20 +1,18 @@
 //
-//  sandfacViewController.m
+//  searchViewController.m
 //  EZ Dining
 //
-//  Created by Jason Krein on 11/5/13.
-//  Copyright (c) 2013 DJMMEK POW. All rights reserved.
+//  Created by jkrein on 11/23/13.
+//  Copyright (c) 2013 Matthew O'Neil. All rights reserved.
 //
 
-#import "sandfacViewController.h"
-#import "BasicCell.h"
-#import <Parse/Parse.h>
+#import "searchViewController.h"
 
-@interface sandfacViewController ()
-@property NSArray *foods;
+@interface searchViewController ()
+
 @end
 
-@implementation sandfacViewController
+@implementation searchViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -25,17 +23,6 @@
     return self;
 }
 
--(void) loadPeopleCallback: (NSArray*) foods error:(NSError*) error
-{
-    if (!error)
-    {
-        self.foods = foods;
-        [self.tableView reloadData];
-    }
-}
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,18 +32,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-    [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
-                  clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
-    
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"allData"];
-    [query whereKey:@"restaurantName" equalTo:@"Sandwich Factory"];
-    
-    //Could use [query whereKey...] instead to constrain the array
-    [query findObjectsInBackgroundWithTarget:self
-                                    selector:@selector(loadPeopleCallback:error:)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,29 +44,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.foods.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"sandCell";
-    BasicCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    PFObject *food = self.foods[indexPath.row];
-    
-    
-    // Configure the cell...
-    cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
-    cell.priceLabel.text = [NSString stringWithFormat:@"$%@", food[@"foodPrice"]];
-    [cell setPrice:[food[@"foodPrice"] doubleValue]];    
     
     return cell;
 }

@@ -10,6 +10,15 @@
 #import "CartHandler.h"
 #import "CartViewController.h"
 
+@interface ViewController()
+    @property NSArray *foods;
+    @property NSMutableArray* allStrings;
+    @property NSMutableArray* filtered;
+    @property BOOL isFiltered;
+@end
+
+
+
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -42,6 +51,7 @@
     self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f", newTotal];
 }
 
+
 - (CartHandler*) getCart
 {
     return cart;
@@ -56,6 +66,14 @@
         CartViewController *myVC = [segue destinationViewController];
         [myVC setCart:cart];
     }
+    if([segue.identifier isEqualToString:@"tacoSegue"])
+    {
+        self.tacosBar.delegate = segue.destinationViewController;
+        self.searchDisplayController.searchResultsDataSource = segue.destinationViewController;
+    }
 }
+
+
+
 
 @end
