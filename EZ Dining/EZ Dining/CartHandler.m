@@ -28,6 +28,7 @@
 }
 
 - (double) getTotalPrice {
+    [self updateTotal];
     return totalPrice;
 }
 
@@ -44,19 +45,14 @@
     [owner update:totalPrice];
 }
 
-- (void) updateTotal
+- (double) updateTotal
 {
-    //totalPrice = newPrice;
     double sum = 0;
     for (FoodItem *food in cartItems) {
         sum += [food getPrice];
     }
-    [owner update:sum];
-}
-
-- (void) addCost:(double)costToAdd {
-    totalPrice += costToAdd;
-    [owner update:totalPrice];
+    totalPrice = sum;
+    return totalPrice;
 }
 
 - (NSMutableArray*) getCartItems

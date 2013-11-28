@@ -15,5 +15,7 @@
 }
 
 - (void) setCart:(CartHandler*)newCart;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+- (IBAction)clearCart:(id)sender;
 
 @end

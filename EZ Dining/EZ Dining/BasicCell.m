@@ -16,6 +16,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self setSelectionStyle:UITableViewCellSelectionStyleBlue];
     }
     return self;
 }
@@ -24,7 +25,22 @@
 {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+    if (selected) {
+        ViewController *view;
+        
+        for (UIView* next = [self superview]; next; next = next.superview)
+        {
+            UIResponder* nextResponder = [next nextResponder];
+            
+            if ([nextResponder isKindOfClass:[ViewController class]])
+            {
+                view = (ViewController*)nextResponder;
+            }
+        }
+        
+        [[view getCart] addItemForName:name andPrice:price];
+        [super setSelected:NO animated:animated];
+    }
 }
 
 - (void) setPrice:(double)newPrice

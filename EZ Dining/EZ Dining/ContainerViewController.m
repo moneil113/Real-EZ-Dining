@@ -8,6 +8,8 @@
 
 #import "ContainerViewController.h"
 #import "CartTableViewController.h"
+#import "ViewController.h"
+#import "CartHandler.h"
 
 @interface ContainerViewController ()
 
@@ -47,4 +49,15 @@
         [myVC setCart:cart];
     }
 }
+
+- (void) update:(double)newTotal {
+    self.priceLabel.text = [NSString stringWithFormat:@"$%.2f", newTotal];
+}
+
+- (IBAction)clearCart:(id)sender {
+    ViewController *view = self.navigationController.viewControllers[0];
+    [view clearCart:sender];
+    
+}
+
 @end

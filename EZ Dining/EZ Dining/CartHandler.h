@@ -24,8 +24,7 @@
 - (double) getTotalPrice;
 - (void) addItemForName:(NSString *)newName andPrice:(double)newPrice;
 - (double) getAmountRemaining;
-- (void) updateTotal;
-- (void) addCost:(double) costToAdd;
+- (double) updateTotal;
 - (NSMutableArray*) getCartItems;
 
 @end
