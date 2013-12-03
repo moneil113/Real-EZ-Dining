@@ -12,6 +12,9 @@
 
 @interface vgsTableViewViewController ()
 @property NSArray *foods;
+@property NSMutableArray* allStrings;
+@property NSMutableArray* filtered;
+@property BOOL isFiltered;
 @end
 
 @implementation vgsTableViewViewController
@@ -31,21 +34,22 @@
     if (!error)
     {
         self.foods = foods;
+        self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
         [self.tableView reloadData];
     }
 }
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
                   clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
     
@@ -56,7 +60,36 @@
     //Could use [query whereKey...] instead to constrain the array
     [query findObjectsInBackgroundWithTarget:self
                                     selector:@selector(loadPeopleCallback:error:)];
+    
+    
 }
+
+-(void)searchBar:(UISearchBar*)searchBar textDidChange:(NSString*)searchText
+{
+    if(searchText.length == 0)
+    {
+        self.isFiltered = NO;
+    }else
+    {
+        self.isFiltered = YES;
+        self.filtered = [[NSMutableArray alloc]init];
+        
+        for(int i = 0; i < self.allStrings.count; i += 1)
+        {
+            NSDictionary *dict = self.allStrings[i];
+            NSString *str = [dict valueForKey:@"foodName"];
+            NSRange stringRange = [str rangeOfString:searchText options:(NSCaseInsensitiveSearch)];
+            if(stringRange.location != NSNotFound)
+            {
+                [self.filtered addObject:dict];
+            }
+        }
+    }
+    [self.tableView reloadData];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -68,24 +101,45 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     // Return the number of rows in the section.
-    return self.foods.count;
+    NSString *test;
+    if(self.isFiltered)
+    {
+        test = @"Yep";
+    }else
+    {
+        test = @"Nope";
+    }
+    
+    if(self.isFiltered)
+    {
+        return self.filtered.count;
+    }
+    return [self.allStrings count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"vgsCell";
     BasicCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    PFObject* food;
     
     // Configure the cell...
-    PFObject *food = self.foods[indexPath.row];
+    if(!self.isFiltered)
+    {
+        food = [self.allStrings objectAtIndex:indexPath.row];
+    }else
+    {
+        food = [self.filtered objectAtIndex:indexPath.row];
+    }
+    
     
     
     // Configure the cell...

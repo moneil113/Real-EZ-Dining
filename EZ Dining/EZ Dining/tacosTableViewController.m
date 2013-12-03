@@ -146,6 +146,7 @@
     
     
     // Configure the cell...
+    NSLog([NSString stringWithFormat:@"%@",food[@"foodPrice"]]);
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
