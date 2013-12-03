@@ -16,6 +16,7 @@
 @property NSMutableArray* allStrings;
 @property NSMutableArray* filtered;
 @property BOOL isFiltered;
+@property double moneyLeft;
 @property (weak, nonatomic) IBOutlet UISearchBar *tacoSearch;
 
 @end
@@ -46,6 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.moneyLeft = 3.00;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -92,10 +94,8 @@
     
 }
 
-//Make table fix itself when canceled https://developer.apple.com/library/ios/documentation/uikit/reference/UISearchBarDelegate_Protocol/Reference/Reference.html
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
-    NSLog(@"HERO");
     self.isFiltered = NO;
     [self.tableView reloadData];
 }
@@ -158,6 +158,19 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
+    
+    
+    
+    if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
 
     
     return cell;

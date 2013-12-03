@@ -9,6 +9,7 @@
 #import "tacosTableViewController.h"
 #import "BasicCell.h"
 #import "ViewController.h"
+#import "CartHandler.h"
 #import <Parse/Parse.h>
 
 @interface tacosTableViewController ()
@@ -16,6 +17,7 @@
 @property NSMutableArray* allStrings;
 @property NSMutableArray* filtered;
 @property BOOL isFiltered;
+@property double moneyLeft;
 @property (weak, nonatomic) IBOutlet UISearchBar *tacoSearch;
 
 @end
@@ -156,6 +158,19 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
+    CartHandler* myCart = [[CartHandler alloc] init];
+    self.moneyLeft = [myCart getAmountRemaining];
+    
+    if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
 
     
     return cell;
