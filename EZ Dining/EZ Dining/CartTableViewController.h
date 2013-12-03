@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 @class CartHandler;
+@class ContainerViewController;
 
 @interface CartTableViewController : UITableViewController
 {
+    CartHandler *cart;
     NSMutableArray *items;
+    ContainerViewController *owner;
 }
 
 - (void) setCart:(CartHandler*)newCart;

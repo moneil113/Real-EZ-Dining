@@ -11,6 +11,7 @@
 #import "CartCell.h"
 #import "FoodItem.h"
 #import "ViewController.h"
+#import "ContainerViewController.h"
 
 @interface CartTableViewController ()
 
@@ -18,11 +19,11 @@
 
 @implementation CartTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithStyle:(UITableViewStyle)style andOwner:(ContainerViewController*)creator
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        owner = creator;
     }
     return self;
 }
@@ -77,7 +78,14 @@
 
 - (void)setCart:(CartHandler*)newCart
 {
-    items = [newCart getCartItems];
+    cart = newCart;
+    items = [cart getCartItems];
+}
+
+- (void) update
+{
+    [self.tableView reloadData];
+    [owner update];
 }
 
 /*

@@ -26,19 +26,9 @@
     [super viewDidLoad];
     cart = [[CartHandler alloc] init:self];
     
-    NSDate * today = [NSDate date];
-    NSCalendar * cal = [[NSCalendar alloc] initWithCalendarIdentifier: NSGregorianCalendar];
+
     
-    NSDateComponents * comps = [cal components:NSHourCalendarUnit fromDate:today];
-    
-    if ( [comps hour]>0 && [comps hour] < 12 )
-        [cart setPriceForTime:9.00];
-    
-    if ( [comps hour] > 12 && [comps hour] < 17 )
-        [cart setPriceForTime:10.75];
-    
-    if ( [comps hour] >17 && [comps hour]<24  )
-        [cart setPriceForTime:8.75];
+    self.remainingPriceLabel.text = [NSString stringWithFormat:@"$%.2f", [cart getAmountRemaining]];
 }
 
 
@@ -50,6 +40,7 @@
 
 - (void) update:(double)newTotal {
     self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f", newTotal];
+    self.remainingPriceLabel.text = [NSString stringWithFormat:@"$%.2f", [cart getAmountRemaining]];
 }
 
 

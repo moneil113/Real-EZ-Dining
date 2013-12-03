@@ -8,6 +8,7 @@
 
 #import "ContainerViewController.h"
 #import "CartTableViewController.h"
+#import "CartHandler.h"
 
 @interface ContainerViewController ()
 
@@ -39,6 +40,11 @@
 - (void) setCart:(CartHandler *)newCart
 {
     cart = newCart;
+}
+
+- (void) update
+{
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f",[cart getTotalPrice]];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
