@@ -51,5 +51,13 @@
     }
     
     [[view getCart] addItemForName:name andPrice:price];
+    
 }
+
+-(void) greyItems
+{
+    double moneyLeft = 5.00;//GET THE AMOUNT OF MONEY LEFT
+    
+}
+
 @end

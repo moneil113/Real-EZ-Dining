@@ -16,7 +16,6 @@
 @property NSMutableArray* allStrings;
 @property NSMutableArray* filtered;
 @property BOOL isFiltered;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UISearchBar *tacoSearch;
 
 @end
@@ -93,6 +92,14 @@
     
 }
 
+//Make table fix itself when canceled https://developer.apple.com/library/ios/documentation/uikit/reference/UISearchBarDelegate_Protocol/Reference/Reference.html
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    NSLog(@"HERO");
+    self.isFiltered = NO;
+    [self.tableView reloadData];
+}
+
 
 
 - (void)didReceiveMemoryWarning
@@ -147,7 +154,6 @@
     
     
     // Configure the cell...
-    NSLog([NSString stringWithFormat:@"%@",food[@"foodPrice"]]);
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",food[@"foodName"]];
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
