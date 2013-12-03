@@ -16,7 +16,23 @@
     self = [super init];
     
     if (self) {
-        totalPrice = 0;
+        NSDate * today = [NSDate date];
+        NSCalendar * cal = [[NSCalendar alloc] initWithCalendarIdentifier: NSGregorianCalendar];
+        
+        NSDateComponents * comps = [cal components:NSHourCalendarUnit fromDate:today];
+        
+        if ( [comps hour] >= 7 && [comps hour] < 10 )
+            timePrice = 7.90;
+        
+        if ( [comps hour] >= 10 && [comps hour] < 17 )
+            timePrice = 9.00;
+        
+        if ( [comps hour] >= 17 && [comps hour] < 20 )
+            timePrice = 10.75;
+        
+        if ( ([comps hour] >= 20 && [comps hour] < 24) || [comps hour] < 3 )
+            timePrice = 8.75;
+        
         owner = creator;
         cartItems = [[NSMutableArray alloc] init];
     }

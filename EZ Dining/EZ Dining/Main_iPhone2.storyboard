@@ -188,7 +188,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQW-nW-3RW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="708"/>
+            <point key="canvasLocation" x="1148" y="708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="alx-Gv-Vu0">
@@ -473,6 +473,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="remainingPriceLabel" destination="4FU-tM-C8h" id="f8f-cj-Gfl"/>
                         <outlet property="searchDisplayController" destination="Q5u-Mp-4DK" id="BZa-OJ-oGB"/>
                         <outlet property="totalPriceLabel" destination="p8B-yX-piL" id="vbD-YE-rFm"/>
                     </connections>
@@ -663,6 +664,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="remainingPriceLabel" destination="N3Z-sY-OCJ" id="0xZ-Cd-aG6"/>
                         <outlet property="searchDisplayController" destination="Ufd-d0-wnD" id="kGh-Rm-Q45"/>
                         <outlet property="totalPriceLabel" destination="htH-W2-epq" id="wwO-Fq-Vbp"/>
                     </connections>
@@ -766,6 +768,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="remainingPriceLabel" destination="rXL-Bn-1w5" id="MWf-yF-AkN"/>
                         <outlet property="searchDisplayController" destination="Xzd-OP-3UK" id="sxm-Kj-ygl"/>
                         <outlet property="totalPriceLabel" destination="1GS-fx-IFV" id="8tg-ze-V9u"/>
                     </connections>
@@ -870,6 +873,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="remainingPriceLabel" destination="zmi-5B-0fT" id="aAQ-6x-KmV"/>
                         <outlet property="searchDisplayController" destination="1Ts-wq-4Fb" id="FQq-zI-nUd"/>
                         <outlet property="totalPriceLabel" destination="Qhb-NN-O8g" id="oOu-BJ-7Ft"/>
                     </connections>
@@ -986,6 +990,10 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yX5-4E-wfG"/>
+                    <connections>
+                        <outlet property="clearCart" destination="5Lv-Qd-HEb" id="WaO-yf-rUM"/>
+                        <outlet property="totalPriceLabel" destination="8bA-HQ-7iY" id="yAe-NG-Vky"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYs-VB-ULf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1005,6 +1013,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7OG-hn-KsQ"/>
+        <segue reference="Odi-sn-Icc"/>
     </inferredMetricsTieBreakers>
 </document>
