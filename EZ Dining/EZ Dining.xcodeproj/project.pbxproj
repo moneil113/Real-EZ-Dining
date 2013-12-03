@@ -206,6 +206,8 @@
 				3474F68A1832A7DD00497D24 /* AppDelegate.h */,
 				3474F68B1832A7DD00497D24 /* AppDelegate.m */,
 				34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */,
+				A512652C184543D800325BFA /* ContainerViewController.h */,
+				A512652D184543D800325BFA /* ContainerViewController.m */,
 				34F6C7A3183C072F007541F9 /* CartCell.h */,
 				34F6C7A4183C072F007541F9 /* CartCell.m */,
 				34DD69A5183FEA2300C00F99 /* CartTableViewController.h */,

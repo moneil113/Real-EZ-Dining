@@ -65,8 +65,8 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"GoToCart"]) {
-        CartTableViewController *myVC = [segue destinationViewController];
-        [myVC performSelector:@selector(setCart:)withObject:cart];
+        ContainerViewController *myVC = [segue destinationViewController];
+        [myVC setCart:cart];
     }
 }
 
