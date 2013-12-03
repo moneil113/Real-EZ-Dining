@@ -10,6 +10,8 @@
 		34046CA01832D215005DF0CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34046C9F1832D215005DF0CB /* InfoPlist.strings */; };
 		34046CA21832D427005DF0CB /* Main_iPhone2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */; };
 		3413F86E18355CF8001A680C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3413F86D18355CF8001A680C /* MenuViewController.m */; };
+		342C060B184921260067841C /* cartTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C060A184921260067841C /* cartTable.m */; };
+		343A7808184703D6004F76F2 /* vgsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 343A7807184703D6004F76F2 /* vgsTable.m */; };
 		3474F67C1832A7DD00497D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F67B1832A7DD00497D24 /* Foundation.framework */; };
 		3474F67E1832A7DD00497D24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F67D1832A7DD00497D24 /* CoreGraphics.framework */; };
 		3474F6801832A7DD00497D24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3474F67F1832A7DD00497D24 /* UIKit.framework */; };
@@ -71,6 +73,10 @@
 		34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone2.storyboard; sourceTree = "<group>"; };
 		3413F86C18355CF8001A680C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3413F86D18355CF8001A680C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		342C0609184921260067841C /* cartTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cartTable.h; sourceTree = "<group>"; };
+		342C060A184921260067841C /* cartTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cartTable.m; sourceTree = "<group>"; };
+		343A7806184703D6004F76F2 /* vgsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgsTable.h; sourceTree = "<group>"; };
+		343A7807184703D6004F76F2 /* vgsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTable.m; sourceTree = "<group>"; };
 		3474F6781832A7DD00497D24 /* EZ Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3474F67B1832A7DD00497D24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3474F67D1832A7DD00497D24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -214,6 +220,10 @@
 				3474F68A1832A7DD00497D24 /* AppDelegate.h */,
 				3474F68B1832A7DD00497D24 /* AppDelegate.m */,
 				34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */,
+				342C0609184921260067841C /* cartTable.h */,
+				342C060A184921260067841C /* cartTable.m */,
+				343A7806184703D6004F76F2 /* vgsTable.h */,
+				343A7807184703D6004F76F2 /* vgsTable.m */,
 				A512652C184543D800325BFA /* ContainerViewController.h */,
 				A512652D184543D800325BFA /* ContainerViewController.m */,
 				34F6C7A3183C072F007541F9 /* CartCell.h */,
@@ -400,12 +410,14 @@
 				3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */,
 				34DD69A7183FEA2300C00F99 /* CartTableViewController.m in Sources */,
 				3474F6951832A7DD00497D24 /* ViewController.m in Sources */,
+				342C060B184921260067841C /* cartTable.m in Sources */,
 				3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */,
 				3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */,
 				3474F68C1832A7DD00497D24 /* AppDelegate.m in Sources */,
 				34BC6EAF1834026300149125 /* BasicCell.m in Sources */,
 				3413F86E18355CF8001A680C /* MenuViewController.m in Sources */,
 				3474F6881832A7DD00497D24 /* main.m in Sources */,
+				343A7808184703D6004F76F2 /* vgsTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

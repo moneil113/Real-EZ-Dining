@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class CartHandler;
 
-@interface ContainerViewController : UIViewController
+@interface ContainerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     CartHandler *cart;
 }
