@@ -39,9 +39,8 @@
 		3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6DC1832A93200497D24 /* tacosTableViewController.m */; };
 		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
 		34BC6EAF1834026300149125 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BC6EAE1834026300149125 /* BasicCell.m */; };
-		9426EF3118453E6E009099C6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9426EF3018453E6E009099C6 /* TestViewController.m */; };
-		94C926D91841873400AE6688 /* searchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C926D81841873400AE6688 /* searchViewController.m */; };
-		94EF869A18354E9600A755B6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EF869918354E9600A755B6 /* Parse.framework */; };
+		34DD69A7183FEA2300C00F99 /* CartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DD69A6183FEA2300C00F99 /* CartTableViewController.m */; };
+		9426EF33184547C8009099C6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426EF32184547C8009099C6 /* Parse.framework */; };
 		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
 		A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */; };
 		A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB431832AC0100D5018B /* SANDWICHbutton2.png */; };
@@ -110,11 +109,11 @@
 		3474F6E01832A93200497D24 /* vgsTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgsTableViewViewController.m; sourceTree = "<group>"; };
 		34BC6EAD1834026300149125 /* BasicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCell.h; sourceTree = "<group>"; };
 		34BC6EAE1834026300149125 /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
-		9426EF2F18453E6E009099C6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		9426EF3018453E6E009099C6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		94C926D71841873400AE6688 /* searchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchViewController.h; sourceTree = "<group>"; };
-		94C926D81841873400AE6688 /* searchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchViewController.m; sourceTree = "<group>"; };
-		94EF869918354E9600A755B6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		34DD69A5183FEA2300C00F99 /* CartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartTableViewController.h; sourceTree = "<group>"; };
+		34DD69A6183FEA2300C00F99 /* CartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartTableViewController.m; sourceTree = "<group>"; usesTabs = 0; };
+		34F6C7A3183C072F007541F9 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
+		34F6C7A4183C072F007541F9 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
+		9426EF32184547C8009099C6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bg_Texture___wood_by_nortago.jpg"; sourceTree = "<group>"; };
 		A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EINSTEINbutton2.png; sourceTree = "<group>"; };
 		A524BB431832AC0100D5018B /* SANDWICHbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SANDWICHbutton2.png; sourceTree = "<group>"; };
@@ -136,9 +135,9 @@
 				3474F6C21832A89000497D24 /* StoreKit.framework in Frameworks */,
 				3474F6C01832A88800497D24 /* Security.framework in Frameworks */,
 				3474F6BE1832A88100497D24 /* QuartzCore.framework in Frameworks */,
-				94EF869A18354E9600A755B6 /* Parse.framework in Frameworks */,
 				3474F6BC1832A87B00497D24 /* MobileCoreServices.framework in Frameworks */,
 				3474F6BA1832A87400497D24 /* libz.1.1.3.dylib in Frameworks */,
+				9426EF33184547C8009099C6 /* Parse.framework in Frameworks */,
 				3474F6B81832A86A00497D24 /* CoreLocation.framework in Frameworks */,
 				3474F67E1832A7DD00497D24 /* CoreGraphics.framework in Frameworks */,
 				3474F6B61832A85E00497D24 /* CFNetwork.framework in Frameworks */,
@@ -183,7 +182,7 @@
 		3474F67A1832A7DD00497D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94EF869918354E9600A755B6 /* Parse.framework */,
+				9426EF32184547C8009099C6 /* Parse.framework */,
 				3474F6C31832A89800497D24 /* SystemConfiguration.framework */,
 				3474F6C11832A89000497D24 /* StoreKit.framework */,
 				3474F6BF1832A88800497D24 /* Security.framework */,
@@ -207,12 +206,14 @@
 				3474F68A1832A7DD00497D24 /* AppDelegate.h */,
 				3474F68B1832A7DD00497D24 /* AppDelegate.m */,
 				34046CA11832D427005DF0CB /* Main_iPhone2.storyboard */,
+				34F6C7A3183C072F007541F9 /* CartCell.h */,
+				34F6C7A4183C072F007541F9 /* CartCell.m */,
+				34DD69A5183FEA2300C00F99 /* CartTableViewController.h */,
+				34DD69A6183FEA2300C00F99 /* CartTableViewController.m */,
 				3413F86C18355CF8001A680C /* MenuViewController.h */,
 				3413F86D18355CF8001A680C /* MenuViewController.m */,
 				3474F6931832A7DD00497D24 /* ViewController.h */,
 				3474F6941832A7DD00497D24 /* ViewController.m */,
-				94C926D71841873400AE6688 /* searchViewController.h */,
-				94C926D81841873400AE6688 /* searchViewController.m */,
 				3474F6961832A7DD00497D24 /* Images.xcassets */,
 				34BC6EAD1834026300149125 /* BasicCell.h */,
 				34BC6EAE1834026300149125 /* BasicCell.m */,
@@ -228,8 +229,6 @@
 				3474F6DC1832A93200497D24 /* tacosTableViewController.m */,
 				3474F6DF1832A93200497D24 /* vgsTableViewViewController.h */,
 				3474F6E01832A93200497D24 /* vgsTableViewViewController.m */,
-				9426EF2F18453E6E009099C6 /* TestViewController.h */,
-				9426EF3018453E6E009099C6 /* TestViewController.m */,
 				3474F6821832A7DD00497D24 /* Supporting Files */,
 			);
 			path = "EZ Dining";
@@ -384,11 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3474F6E41832A93200497D24 /* tacosTableViewController.m in Sources */,
-				9426EF3118453E6E009099C6 /* TestViewController.m in Sources */,
 				3474F6CD1832A90B00497D24 /* CartHandler.m in Sources */,
-				94C926D91841873400AE6688 /* searchViewController.m in Sources */,
 				3474F6D51832A91C00497D24 /* FoodItem.m in Sources */,
 				3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */,
+				34DD69A7183FEA2300C00F99 /* CartTableViewController.m in Sources */,
 				3474F6951832A7DD00497D24 /* ViewController.m in Sources */,
 				3474F6CF1832A90B00497D24 /* einsteinTableViewController.m in Sources */,
 				3474F6E31832A93200497D24 /* sandfacViewController.m in Sources */,
