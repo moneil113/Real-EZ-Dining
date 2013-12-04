@@ -8,6 +8,8 @@
 
 #import "vgsTableViewViewController.h"
 #import "BasicCell.h"
+#import "ViewController.h"
+#import "CartHandler.h"
 #import <Parse/Parse.h>
 
 @interface vgsTableViewViewController ()
@@ -35,8 +37,22 @@
     {
         self.foods = foods;
         self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
+        
+        NSSortDescriptor *sortDescriptor;
+        sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"foodName"
+                                                     ascending:YES];
+        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+        NSArray *sortedArray = [self.allStrings sortedArrayUsingDescriptors:sortDescriptors];
+        self.allStrings = [[NSMutableArray alloc] initWithArray: sortedArray];
+
         [self.tableView reloadData];
     }
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    self.isFiltered = NO;
+    [self.tableView reloadData];
 }
 
 
@@ -147,6 +163,23 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
+    
+    //Getting the amount of $ remaining.
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    float moneyLeft = cart.getAmountRemaining;
+    
+    
+    if([food[@"foodPrice"] doubleValue] > moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
     
     
     return cell;

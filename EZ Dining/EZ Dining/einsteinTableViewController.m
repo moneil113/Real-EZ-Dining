@@ -8,6 +8,8 @@
 
 #import "einsteinTableViewController.h"
 #import "BasicCell.h"
+#import "ViewController.h"
+#import "CartHandler.h"
 #import <Parse/Parse.h>
 
 @interface einsteinTableViewController ()
@@ -34,8 +36,24 @@
     {
         self.foods = foods;
         self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
+
+        
+        
+        NSSortDescriptor *sortDescriptor;
+        sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"foodName"
+                                                     ascending:YES];
+        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+        NSArray *sortedArray = [self.allStrings sortedArrayUsingDescriptors:sortDescriptors];
+        self.allStrings = [[NSMutableArray alloc] initWithArray: sortedArray];
+
         [self.tableView reloadData];
     }
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    self.isFiltered = NO;
+    [self.tableView reloadData];
 }
 
 
@@ -104,6 +122,8 @@
     return 1;
 }
 
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
@@ -147,6 +167,25 @@
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
     
+    
+    
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    float moneyLeft = cart.getAmountRemaining;
+    
+    
+    if([food[@"foodPrice"] doubleValue] > moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
+    
+    return cell;
     
     return cell;
 }

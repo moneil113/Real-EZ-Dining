@@ -40,6 +40,14 @@
     {
         self.foods = foods;
         self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
+        
+        NSSortDescriptor *sortDescriptor;
+        sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"foodName"
+                                                     ascending:YES];
+        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+        NSArray *sortedArray = [self.allStrings sortedArrayUsingDescriptors:sortDescriptors];
+        self.allStrings = [[NSMutableArray alloc] initWithArray: sortedArray];
+
         [self.tableView reloadData];
     }
 }
@@ -57,7 +65,6 @@
     
     [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
                   clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
-    
     
     PFQuery *query = [PFQuery queryWithClassName:@"allData"];
     [query whereKey:@"restaurantName" equalTo:@"Tacos To Go"];
@@ -158,8 +165,12 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
-    CartHandler* myCart = [[CartHandler alloc] init];
-    self.moneyLeft = [myCart getAmountRemaining];
+    
+    //Getting the amount of $ remaining.
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    self.moneyLeft = cart.getAmountRemaining;
+    
     
     if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
     {

@@ -52,6 +52,11 @@
     
     [[view getCart] addItemForName:name andPrice:price];
     
+    //Reloading data
+    NSArray* children = view.childViewControllers;
+    UITableViewController* myChild = children[0];
+    myChild.tableView.reloadData;
+    
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import "sandfacViewController.h"
 #import "BasicCell.h"
+#import "CartHandler.h"
+#import "ViewController.h"
 #import <Parse/Parse.h>
 
 @interface sandfacViewController ()
@@ -124,11 +126,17 @@
     return [self.allStrings count];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    self.isFiltered = NO;
+    [self.tableView reloadData];
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"sandCell";
     BasicCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    NSLog([NSString stringWithFormat:@"%@",cell]);
     PFObject* food;
     
     // Configure the cell...
@@ -148,6 +156,22 @@
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
     
+    
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    float moneyLeft = cart.getAmountRemaining;
+    
+    
+    if([food[@"foodPrice"] doubleValue] > moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
     
     return cell;
 }

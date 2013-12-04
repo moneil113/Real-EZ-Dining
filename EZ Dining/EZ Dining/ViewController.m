@@ -52,6 +52,9 @@
 - (IBAction)clearCart:(id)sender {
     cart = [[CartHandler alloc] init:self];
     [cart updateTotal];
+    NSArray* childs = self.childViewControllers;
+    UITableViewController* toReload = childs[0];
+    toReload.tableView.reloadData;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

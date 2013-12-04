@@ -9,6 +9,7 @@
 #import "tacosTableViewController.h"
 #import "BasicCell.h"
 #import "ViewController.h"
+#import "CartHandler.h"
 #import <Parse/Parse.h>
 
 @interface tacosTableViewController ()
@@ -47,7 +48,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.moneyLeft = 3.00;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -57,7 +57,6 @@
     
     [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
                   clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
-    
     
     PFQuery *query = [PFQuery queryWithClassName:@"allData"];
     [query whereKey:@"restaurantName" equalTo:@"Tacos To Go"];
@@ -159,6 +158,10 @@
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
     
+    //Getting the amount of $ remaining.
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    self.moneyLeft = cart.getAmountRemaining;
     
     
     if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
