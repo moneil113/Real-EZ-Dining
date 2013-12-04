@@ -49,6 +49,12 @@
     }
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    self.isFiltered = NO;
+    [self.tableView reloadData];
+}
+
 
 - (void)viewDidLoad
 {
