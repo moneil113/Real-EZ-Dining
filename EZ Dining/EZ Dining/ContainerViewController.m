@@ -46,6 +46,9 @@
 {
     [cart updateTotal];
     self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f",[cart getTotalPrice]];
+    NSArray* children = self.childViewControllers;
+    UITableViewController* myChild = children[0];
+    myChild.tableView.reloadData;
 }
 
 - (IBAction)clearCart:(id)sender {
