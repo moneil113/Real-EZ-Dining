@@ -19,11 +19,10 @@
 
 @implementation CartTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style andOwner:(ContainerViewController*)creator
+- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        owner = creator;
     }
     return self;
 }
@@ -36,7 +35,7 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.tableView reloadData];
+    [self update];
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,6 +81,11 @@
     items = [cart getCartItems];
 }
 
+- (void) setOwner:(ContainerViewController *)creator
+{
+    owner = creator;
+}
+
 - (void) update
 {
     [self.tableView reloadData];
@@ -103,6 +107,7 @@
         // Delete the row from the data source
         [items removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [owner update];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

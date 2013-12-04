@@ -25,12 +25,14 @@
 {
     [super viewDidLoad];
     cart = [[CartHandler alloc] init:self];
-    
-
-    
     self.remainingPriceLabel.text = [NSString stringWithFormat:@"$%.2f", [cart getAmountRemaining]];
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self update:[cart getTotalPrice]];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -50,8 +52,9 @@
 }
 
 - (IBAction)clearCart:(id)sender {
-    cart = [[CartHandler alloc] init:self];
+    [[cart getCartItems] removeAllObjects];
     [cart updateTotal];
+    [self update:[cart getTotalPrice]];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

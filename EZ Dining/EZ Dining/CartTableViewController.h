@@ -18,5 +18,6 @@
 }
 
 - (void) setCart:(CartHandler*)newCart;
+- (void) setOwner:(ContainerViewController*)creator;
 
 @end

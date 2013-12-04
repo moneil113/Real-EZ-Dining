@@ -44,13 +44,21 @@
 
 - (void) update
 {
+    [cart updateTotal];
     self.totalPriceLabel.text = [NSString stringWithFormat:@"$%.2f",[cart getTotalPrice]];
+}
+
+- (IBAction)clearCart:(id)sender {
+    [[cart getCartItems] removeAllObjects];
+    [cart updateTotal];
+    [self update];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"CartContainer"]) {
         CartTableViewController *myVC = [segue destinationViewController];
         [myVC setCart:cart];
+        [myVC setOwner:self];
     }
 }
 @end

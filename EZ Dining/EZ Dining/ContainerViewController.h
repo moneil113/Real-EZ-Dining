@@ -16,7 +16,7 @@
 
 - (void) setCart:(CartHandler*)newCart;
 - (void) update;
-@property (weak, nonatomic) IBOutlet UIButton *clearCart;
+- (IBAction)clearCart:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
 
 @end

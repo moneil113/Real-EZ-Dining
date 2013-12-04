@@ -67,7 +67,8 @@
     for (FoodItem *food in cartItems) {
         sum += [food getPrice];
     }
-    [owner update:sum];
+    totalPrice = sum;
+    [owner update:totalPrice];
 }
 
 - (void) addCost:(double)costToAdd {
