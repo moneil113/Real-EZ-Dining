@@ -59,9 +59,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOK-HQ-SOI">
-                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <rect key="frame" x="278" y="19" width="22" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Add to Cart"/>
+                                            <fontDescription key="fontDescription" name="Superclarendon-Light" family="Superclarendon" pointSize="28"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
                                             <connections>
                                                 <action selector="addToCart:" destination="4He-Hb-DHr" eventType="touchUpInside" id="BEM-au-s0V"/>
                                             </connections>
@@ -136,10 +140,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8s-fg-0GA">
-                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <rect key="frame" x="282" y="21" width="18" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Add to Cart">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="Superclarendon-Light" family="Superclarendon" pointSize="28"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
                                             </state>
                                             <connections>
                                                 <action selector="addToCart:" destination="dNS-In-vAU" eventType="touchUpInside" id="TMi-S8-uhr"/>
@@ -244,10 +250,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gww-N2-rJx">
-                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <rect key="frame" x="273" y="16" width="27" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Add to Cart">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="Superclarendon-Light" family="Superclarendon" pointSize="28"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
                                             </state>
                                             <connections>
                                                 <action selector="addToCart:" destination="1sM-xx-q9L" eventType="touchUpInside" id="g7I-Mn-Vtb"/>
@@ -460,11 +468,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="sbs-1C-Mt0">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7xa-ld-dOr">
-                                <rect key="frame" x="238" y="7" width="66" height="30"/>
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Cart">
+                                <state key="normal" title="Cart">
                                     <color key="titleColor" red="0.51620250459999995" green="0.80681999360000001" blue="0.50686201829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="eg6-rj-qhA" kind="push" identifier="GoToCart" id="7OG-hn-KsQ"/>
@@ -653,11 +661,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Ahz-Yq-s5P">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZR5-GE-wYE">
-                                <rect key="frame" x="238" y="7" width="66" height="30"/>
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Cart">
+                                <state key="normal" title="Cart">
                                     <color key="titleColor" red="0.51620250459999995" green="0.80681999360000001" blue="0.50686201829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.52941179279999995" green="0.80392163989999998" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="eg6-rj-qhA" kind="push" identifier="GoToCart" id="lHy-KV-6ja"/>
@@ -758,9 +766,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Ulc-tF-jhZ">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4cG-3f-yL3">
-                                <rect key="frame" x="238" y="7" width="66" height="30"/>
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Cart">
+                                <state key="normal" title="Cart">
                                     <color key="titleColor" red="0.51620250459999995" green="0.80681999360000001" blue="0.50686201829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -863,9 +871,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="wDb-Yv-EEh">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MZE-c7-gbG">
-                                <rect key="frame" x="238" y="7" width="66" height="30"/>
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Cart">
+                                <state key="normal" title="Cart">
                                     <color key="titleColor" red="0.51620250459999995" green="0.80681999360000001" blue="0.50686201829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1013,6 +1021,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eTa-KQ-h03"/>
+        <segue reference="7OG-hn-KsQ"/>
     </inferredMetricsTieBreakers>
 </document>
