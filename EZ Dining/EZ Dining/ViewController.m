@@ -32,6 +32,9 @@
 {
     [super viewWillAppear:animated];
     [self update:[cart getTotalPrice]];
+    NSArray* children = self.childViewControllers;
+    UITableViewController* myChild = children[0];
+    myChild.tableView.reloadData;
 }
 
 - (void)didReceiveMemoryWarning
