@@ -9,6 +9,7 @@
 #import "tacosTableViewController.h"
 #import "BasicCell.h"
 #import "ViewController.h"
+#import "CartHandler.h"
 #import <Parse/Parse.h>
 
 @interface tacosTableViewController ()
@@ -16,6 +17,7 @@
 @property NSMutableArray* allStrings;
 @property NSMutableArray* filtered;
 @property BOOL isFiltered;
+@property double moneyLeft;
 @property (weak, nonatomic) IBOutlet UISearchBar *tacoSearch;
 
 @end
@@ -56,7 +58,6 @@
     [Parse setApplicationId:@"UVgPnay3gDOO8hRHbtu2ftCTwGLbD9h24f9QJ487"
                   clientKey:@"FE0DrPeDiGJI4iIGYkpziVn4nmGEW1ogyEIhEyXS"];
     
-    
     PFQuery *query = [PFQuery queryWithClassName:@"allData"];
     [query whereKey:@"restaurantName" equalTo:@"Tacos To Go"];
     
@@ -92,10 +93,8 @@
     
 }
 
-//Make table fix itself when canceled https://developer.apple.com/library/ios/documentation/uikit/reference/UISearchBarDelegate_Protocol/Reference/Reference.html
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
-    NSLog(@"HERO");
     self.isFiltered = NO;
     [self.tableView reloadData];
 }
@@ -158,6 +157,23 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"$%.2f", [food[@"foodPrice"] doubleValue]];
     [cell setPrice:[food[@"foodPrice"] doubleValue]];
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
+    
+    //Getting the amount of $ remaining.
+    ViewController* view = self.parentViewController;
+    CartHandler* cart = view.getCart;
+    self.moneyLeft = cart.getAmountRemaining;
+    
+    
+    if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
+    {
+        cell.contentView.backgroundColor = [UIColor grayColor];
+        cell.nameLabel.backgroundColor = [UIColor grayColor];
+    }
+    else
+    {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.nameLabel.backgroundColor = [UIColor whiteColor];
+    }
 
     
     return cell;

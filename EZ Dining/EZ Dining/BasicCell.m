@@ -52,11 +52,10 @@
     
     [[view getCart] addItemForName:name andPrice:price];
     
-}
-
--(void) greyItems
-{
-    double moneyLeft = 5.00;//GET THE AMOUNT OF MONEY LEFT
+    //Reloading data
+    NSArray* children = view.childViewControllers;
+    UITableViewController* myChild = children[0];
+    myChild.tableView.reloadData;
     
 }
 
