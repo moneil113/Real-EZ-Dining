@@ -979,16 +979,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-HQ-7iY">
-                                <rect key="frame" x="64" y="471" width="69" height="21"/>
+                                <rect key="frame" x="64" y="471" width="236" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crV-0V-YGZ">
-                                <rect key="frame" x="266" y="471" width="37" height="30"/>
+                                <rect key="frame" x="263" y="467" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="0.99215692281723022" green="0.23137256503105164" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="eg6-rj-qhA" eventType="touchUpInside" id="hFJ-RP-Yk9"/>
