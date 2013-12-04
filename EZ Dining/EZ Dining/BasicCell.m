@@ -24,7 +24,26 @@
 {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+    if (selected) {
+        ViewController *view;
+        
+        for (UIView* next = [self superview]; next; next = next.superview)
+        {
+            UIResponder* nextResponder = [next nextResponder];
+            
+            if ([nextResponder isKindOfClass:[ViewController class]])
+            {
+                view = (ViewController*)nextResponder;
+            }
+        }
+        
+        [[view getCart] addItemForName:name andPrice:price];
+        
+        //Reloading data
+        NSArray* children = view.childViewControllers;
+        UITableViewController* myChild = children[0];
+        myChild.tableView.reloadData;
+    }
 }
 
 - (void) setPrice:(double)newPrice
@@ -35,28 +54,6 @@
 - (void) setName:(NSString *)newName
 {
     name = newName;
-}
-
-- (IBAction)addToCart:(id)sender {
-    ViewController *view;
-    
-    for (UIView* next = [self superview]; next; next = next.superview)
-    {
-        UIResponder* nextResponder = [next nextResponder];
-        
-        if ([nextResponder isKindOfClass:[ViewController class]])
-        {
-            view = (ViewController*)nextResponder;
-        }
-    }
-    
-    [[view getCart] addItemForName:name andPrice:price];
-    
-    //Reloading data
-    NSArray* children = view.childViewControllers;
-    UITableViewController* myChild = children[0];
-    myChild.tableView.reloadData;
-    
 }
 
 @end

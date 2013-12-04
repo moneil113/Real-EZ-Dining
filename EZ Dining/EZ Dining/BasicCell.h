@@ -17,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
-- (IBAction)addToCart:(id)sender;
 - (void) setPrice:(double)newPrice;
 - (void) setName:(NSString*)newName;
 

@@ -165,7 +165,7 @@
     [cell setName:[NSString stringWithFormat:@"%@", food[@"foodName"]]];
     
     //Getting the amount of $ remaining.
-    ViewController* view = self.parentViewController;
+    ViewController* view = (ViewController*) self.parentViewController;
     CartHandler* cart = view.getCart;
     float moneyLeft = cart.getAmountRemaining;
     
