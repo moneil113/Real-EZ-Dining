@@ -32,9 +32,7 @@
 {
     [super viewWillAppear:animated];
     [self update:[cart getTotalPrice]];
-    NSArray* children = self.childViewControllers;
-    UITableViewController* myChild = children[0];
-    myChild.tableView.reloadData;
+    [self reloadTable];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,6 +56,7 @@
     [[cart getCartItems] removeAllObjects];
     [cart updateTotal];
     [self update:[cart getTotalPrice]];
+    [self reloadTable];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -67,7 +66,12 @@
     }
 }
 
-
+- (void) reloadTable
+{
+    NSArray* children = self.childViewControllers;
+    UITableViewController* myChild = children[0];
+    myChild.tableView.reloadData;
+}
 
 
 @end
