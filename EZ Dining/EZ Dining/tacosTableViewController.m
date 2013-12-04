@@ -174,8 +174,8 @@
     
     if([food[@"foodPrice"] doubleValue] > self.moneyLeft)
     {
-        cell.contentView.backgroundColor = [UIColor grayColor];
-        cell.nameLabel.backgroundColor = [UIColor grayColor];
+        cell.contentView.backgroundColor = [UIColor lightGrayColor];
+        cell.nameLabel.backgroundColor = [UIColor lightGrayColor];
     }
     else
     {

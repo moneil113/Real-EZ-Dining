@@ -427,8 +427,8 @@
                                 <rect key="frame" x="263" y="467" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.84459918479999996" green="0.0" blue="0.02985793812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="UP1-ih-Ti0" eventType="touchUpInside" id="ZDw-iN-gLK"/>
@@ -537,9 +537,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ma-yd-Jsh">
-                                            <rect key="frame" x="220" y="16" width="80" height="30"/>
+                                            <rect key="frame" x="273" y="16" width="27" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Add to Cart">
+                                            <fontDescription key="fontDescription" name="Superclarendon-Light" family="Superclarendon" pointSize="28"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" red="0.52941179275512695" green="0.80392163991928101" blue="0.51764708757400513" alpha="1" colorSpace="deviceRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -618,8 +620,8 @@
                                 <rect key="frame" x="263" y="467" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.84459918479999996" green="0.0" blue="0.02985793812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="TY0-WF-Vtt" eventType="touchUpInside" id="ySh-aG-y1C"/>
@@ -724,8 +726,8 @@
                                 <rect key="frame" x="263" y="467" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.84459918479999996" green="0.0" blue="0.02985793812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="LCN-JN-2gm" eventType="touchUpInside" id="ISs-pv-QBq"/>
@@ -828,8 +830,8 @@
                                 <rect key="frame" x="263" y="467" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.84459918479999996" green="0.0" blue="0.02985793812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.231372565" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="gi3-hV-qop" eventType="touchUpInside" id="daf-Wt-wDY"/>
@@ -978,8 +980,7 @@
                                 <rect key="frame" x="266" y="471" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.84459918479999996" green="0.0" blue="0.02985793812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.99215692281723022" green="0.23137256503105164" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearCart:" destination="eg6-rj-qhA" eventType="touchUpInside" id="hFJ-RP-Yk9"/>

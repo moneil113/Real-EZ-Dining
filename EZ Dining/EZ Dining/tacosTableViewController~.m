@@ -40,6 +40,14 @@
     {
         self.foods = foods;
         self.allStrings = [[NSMutableArray alloc] initWithArray:foods];
+        
+        NSSortDescriptor *sortDescriptor;
+        sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"foodName"
+                                                     ascending:YES];
+        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+        NSArray *sortedArray = [self.allStrings sortedArrayUsingDescriptors:sortDescriptors];
+        self.allStrings = [[NSMutableArray alloc] initWithArray: sortedArray];
+
         [self.tableView reloadData];
     }
 }
