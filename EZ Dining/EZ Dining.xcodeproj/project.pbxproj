@@ -44,7 +44,6 @@
 		9426EF33184547C8009099C6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426EF32184547C8009099C6 /* Parse.framework */; };
 		A512652E184543D800325BFA /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512652D184543D800325BFA /* ContainerViewController.m */; };
 		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
-		A59492401832C542009E74EB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A594923F1832C542009E74EB /* Button.png */; };
 		A5DCE52D18354C3F00D85DE0 /* TACOSbutton3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DCE52918354C3F00D85DE0 /* TACOSbutton3.png */; };
 		A5DCE52E18354C3F00D85DE0 /* SANDWICHbutton3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DCE52A18354C3F00D85DE0 /* SANDWICHbutton3.png */; };
 		A5DCE52F18354C3F00D85DE0 /* EINSTEINbutton3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DCE52B18354C3F00D85DE0 /* EINSTEINbutton3.png */; };
@@ -352,7 +351,6 @@
 				A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */,
 				A5DCE52D18354C3F00D85DE0 /* TACOSbutton3.png in Resources */,
 				A5DCE53018354C3F00D85DE0 /* VGSbutton3.png in Resources */,
-				A59492401832C542009E74EB /* Button.png in Resources */,
 				3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */,
 				A5DCE52E18354C3F00D85DE0 /* SANDWICHbutton3.png in Resources */,
 				A5DCE52F18354C3F00D85DE0 /* EINSTEINbutton3.png in Resources */,
