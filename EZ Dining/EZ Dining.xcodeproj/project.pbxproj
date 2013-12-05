@@ -40,14 +40,10 @@
 		3474F6E61832A93200497D24 /* vgsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474F6E01832A93200497D24 /* vgsTableViewViewController.m */; };
 		34BC6EAF1834026300149125 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BC6EAE1834026300149125 /* BasicCell.m */; };
 		34DD69A7183FEA2300C00F99 /* CartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DD69A6183FEA2300C00F99 /* CartTableViewController.m */; };
-		9426EF33184547C8009099C6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426EF32184547C8009099C6 /* Parse.framework */; };
 		34F6C7A5183C072F007541F9 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6C7A4183C072F007541F9 /* CartCell.m */; };
+		9426EF33184547C8009099C6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426EF32184547C8009099C6 /* Parse.framework */; };
 		A512652E184543D800325BFA /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512652D184543D800325BFA /* ContainerViewController.m */; };
 		A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */; };
-		A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */; };
-		A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB431832AC0100D5018B /* SANDWICHbutton2.png */; };
-		A524BB461832AC0500D5018B /* TACOSbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB451832AC0500D5018B /* TACOSbutton2.png */; };
-		A524BB481832AC0C00D5018B /* VGSbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A524BB471832AC0C00D5018B /* VGSbutton.png */; };
 		A59492401832C542009E74EB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A594923F1832C542009E74EB /* Button.png */; };
 		A5DCE52D18354C3F00D85DE0 /* TACOSbutton3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DCE52918354C3F00D85DE0 /* TACOSbutton3.png */; };
 		A5DCE52E18354C3F00D85DE0 /* SANDWICHbutton3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DCE52A18354C3F00D85DE0 /* SANDWICHbutton3.png */; };
@@ -119,10 +115,6 @@
 		A512652C184543D800325BFA /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		A512652D184543D800325BFA /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bg_Texture___wood_by_nortago.jpg"; sourceTree = "<group>"; };
-		A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EINSTEINbutton2.png; sourceTree = "<group>"; };
-		A524BB431832AC0100D5018B /* SANDWICHbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SANDWICHbutton2.png; sourceTree = "<group>"; };
-		A524BB451832AC0500D5018B /* TACOSbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TACOSbutton2.png; sourceTree = "<group>"; };
-		A524BB471832AC0C00D5018B /* VGSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VGSbutton.png; sourceTree = "<group>"; };
 		A594923F1832C542009E74EB /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		A5DCE52918354C3F00D85DE0 /* TACOSbutton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TACOSbutton3.png; sourceTree = "<group>"; };
 		A5DCE52A18354C3F00D85DE0 /* SANDWICHbutton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SANDWICHbutton3.png; sourceTree = "<group>"; };
@@ -244,15 +236,11 @@
 			isa = PBXGroup;
 			children = (
 				A524BB3F1832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg */,
-				A524BB411832ABFA00D5018B /* EINSTEINbutton2.png */,
 				A5DCE52918354C3F00D85DE0 /* TACOSbutton3.png */,
 				A5DCE52A18354C3F00D85DE0 /* SANDWICHbutton3.png */,
 				A5DCE52B18354C3F00D85DE0 /* EINSTEINbutton3.png */,
 				A5DCE52C18354C3F00D85DE0 /* VGSbutton3.png */,
-				A524BB431832AC0100D5018B /* SANDWICHbutton2.png */,
 				A594923F1832C542009E74EB /* Button.png */,
-				A524BB451832AC0500D5018B /* TACOSbutton2.png */,
-				A524BB471832AC0C00D5018B /* VGSbutton.png */,
 				3474F6D01832A91C00497D24 /* EZ Dining-Info.plist */,
 				34046C9F1832D215005DF0CB /* InfoPlist.strings */,
 				3474F6D11832A91C00497D24 /* EZ Dining-Prefix.pch */,
@@ -327,6 +315,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Matthew O'Neil";
 				TargetAttributes = {
+					3474F6771832A7DD00497D24 = {
+						DevelopmentTeam = PY9957M84G;
+					};
 					3474F69B1832A7DD00497D24 = {
 						TestTargetID = 3474F6771832A7DD00497D24;
 					};
@@ -359,13 +350,9 @@
 				3474F6971832A7DD00497D24 /* Images.xcassets in Resources */,
 				34046CA21832D427005DF0CB /* Main_iPhone2.storyboard in Resources */,
 				A524BB401832ABC000D5018B /* Bg_Texture___wood_by_nortago.jpg in Resources */,
-				A524BB461832AC0500D5018B /* TACOSbutton2.png in Resources */,
-				A524BB481832AC0C00D5018B /* VGSbutton.png in Resources */,
 				A5DCE52D18354C3F00D85DE0 /* TACOSbutton3.png in Resources */,
 				A5DCE53018354C3F00D85DE0 /* VGSbutton3.png in Resources */,
 				A59492401832C542009E74EB /* Button.png in Resources */,
-				A524BB421832ABFA00D5018B /* EINSTEINbutton2.png in Resources */,
-				A524BB441832AC0100D5018B /* SANDWICHbutton2.png in Resources */,
 				3474F6D41832A91C00497D24 /* EZ Dining-Info.plist in Resources */,
 				A5DCE52E18354C3F00D85DE0 /* SANDWICHbutton3.png in Resources */,
 				A5DCE52F18354C3F00D85DE0 /* EINSTEINbutton3.png in Resources */,
@@ -514,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
@@ -524,6 +512,7 @@
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
 				INFOPLIST_FILE = "EZ Dining/EZ Dining-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -533,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Matthew/Documents/School\\ 13-14/CPE\\ 123/Real-EZ-Dining/EZ\\ Dining",
@@ -543,6 +533,7 @@
 				GCC_PREFIX_HEADER = "EZ Dining/EZ Dining-Prefix.pch";
 				INFOPLIST_FILE = "EZ Dining/EZ Dining-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

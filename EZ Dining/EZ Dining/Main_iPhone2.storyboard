@@ -69,6 +69,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="9F5-fl-egj" id="55n-UC-lgj"/>
+                                    <outlet property="plusLabel" destination="5yi-ko-aXN" id="6S2-VG-jmA"/>
                                     <outlet property="priceLabel" destination="0FN-8c-DMg" id="tN4-1h-ReO"/>
                                 </connections>
                             </tableViewCell>
@@ -145,6 +146,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="0xF-eO-HVh" id="go3-M0-YrC"/>
+                                    <outlet property="plusLabel" destination="d1I-vA-r1L" id="O11-sS-FbY"/>
                                     <outlet property="priceLabel" destination="LH6-f3-ViA" id="GTB-Q9-8xt"/>
                                 </connections>
                             </tableViewCell>
@@ -250,6 +252,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="MQl-gW-jOj" id="5KJ-Je-RL5"/>
+                                    <outlet property="plusLabel" destination="evf-y9-Jpo" id="OeA-tD-V2j"/>
                                     <outlet property="priceLabel" destination="EZX-XH-73D" id="icU-0H-aHt"/>
                                 </connections>
                             </tableViewCell>
@@ -516,7 +519,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="test text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQV-HI-3AE">
+                                        <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="test text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQV-HI-3AE">
                                             <rect key="frame" x="0.0" y="0.0" width="115" height="62"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -540,6 +543,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="sQV-HI-3AE" id="ZKt-FK-hQG"/>
+                                    <outlet property="plusLabel" destination="j6v-td-PY7" id="vWg-54-NaR"/>
                                     <outlet property="priceLabel" destination="GP5-Ad-3Ah" id="MDZ-5c-vuL"/>
                                 </connections>
                             </tableViewCell>
@@ -885,7 +889,7 @@
         <scene sceneID="ppO-30-FPZ">
             <objects>
                 <tableViewController id="zzn-6d-Dus" customClass="CartTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="kln-c4-NA1">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="kln-c4-NA1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -905,7 +909,7 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-fl-yoa">
-                                            <rect key="frame" x="257" y="20" width="43" height="21"/>
+                                            <rect key="frame" x="233" y="20" width="67" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>

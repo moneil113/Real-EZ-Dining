@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *plusLabel;
 
 - (void) setPrice:(double)newPrice;
 - (void) setName:(NSString*)newName;
